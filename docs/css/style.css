@@ -1,0 +1,32 @@
+body {
+    background-image: url("../resources/layout/home_sfondo.jpg");
+	background-position: center top;
+    background-repeat: no-repeat;
+    
+    background-color: #d2a64d;
+    margin-top: 0;
+}
+
+.main {
+	color: #FFF;
+	width: 1000px;
+	height: 1200px;	
+	margin: 0 auto;
+	padding: 0 auto;
+	text-align: left;
+}
+
+.menu {
+    width: 685px; 
+    position: absolute; 
+    top: 136px; 
+    margin-left: 280px; 
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+
+.menu div a {
+	text-decoration: none;
+	color: white;
+}
