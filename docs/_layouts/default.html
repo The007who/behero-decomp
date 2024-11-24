@@ -5,13 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ page.title }} - Behero Wiki</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="../resources/layout/logo.png">
+    <link rel="icon" href="resources/layout/logo.png">
 </head>
 <body>
     <div class="main">
         <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 10px;">
 
         <div class="menu">
+    
             <div><a href=""><img src="resources/layout/home.png" alt="homebtn"></a></div>
             <div><a href="{{ storyworld.url }}">STORY AND WORLD</a></div>
             <div><a href=""><img src="resources/layout/cards.png" alt="cardsbtn"></a></div>
@@ -30,8 +31,21 @@
             </iframe>
         </div>
 
+        <script>          
+            fetch('https://api.github.com/repos/The007who/behero-decomp/commits')
+              .then(response => response.json())
+              .then(data => {
+                const commits = data.map(commit => {
+                  return `<li>${commit.commit.author.date}: ${commit.commit.message}</li>`;
+                });
+                document.getElementById('commit-history').innerHTML = commits.join('');
+              });
+        </script>
+          
+        <div id="commit-history"></div>
         
         
     </div>
+
 </body>
 </html>
