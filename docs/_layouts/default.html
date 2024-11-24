@@ -9,25 +9,28 @@
 </head>
 <body>
     <div class="main">
-        <img src="resources/layout/header.jpg" alt="header">
+        <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 10px;">
 
         <div class="menu">
-            <div><a href="">HOMEPAGE</a></div>
-
-            {% for page in site.page %}
-                <div><a href="{{ page.url }}">{{ page.title }}</a></div>
-            {% endfor %}
-
-
+            <div><a href=""><img src="resources/layout/home.png" alt="homebtn"></a></div>
             <div><a href="{{ storyworld.url }}">STORY AND WORLD</a></div>
-            <div><a href="">CARDS</a></div>
+            <div><a href=""><img src="resources/layout/cards.png" alt="cardsbtn"></a></div>
             <div><a href="">HARDWARE</a></div>
 
         </div>
 
-        <div>
-            {{ content }}
+        <div class="content">
+            <div>
+                {{ content }}
+            </div>
+
+            <iframe src="https://ghbtns.com/github-btn.html?user=The007who&repo=behero-decomp&type=star&count=true&size=large" 
+            frameborder="0" scrolling="0" width="170" height="30" title="GitHub"
+            style="margin-left: 10px;">
+            </iframe>
         </div>
+
+        
         
     </div>
 </body>
