@@ -61,11 +61,17 @@ footer section div {
     color: #fff; /* adjust text color as needed */
     margin-top: 55px;
     margin-left: 10px;
+    margin-right: 10px;
 
 }
 
 footer section div li {
     margin-top: 5px;
+}
+
+footer section div li a {
+    text-decoration: none;
+    color: white;
 }
 
 @media (max-width: 1000px) {
