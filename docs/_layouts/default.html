@@ -6,8 +6,9 @@
     <title>{{ page.title }} - Behero Wiki</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="resources/layout/logo.png">
+    <script src="js/script.js"></script>
 </head>
-<body>
+<body onload="startUp();">
     <div class="main">
         <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 10px;">
 
@@ -30,22 +31,14 @@
             style="margin-left: 10px;">
             </iframe>
         </div>
-
-        <script>          
-            fetch('https://api.github.com/repos/The007who/behero-decomp/commits')
-              .then(response => response.json())
-              .then(data => {
-                const commits = data.map(commit => {
-                  return `<li>${commit.commit.author.date}: ${commit.commit.message}</li>`;
-                });
-                document.getElementById('commit-history').innerHTML = commits.join('');
-              });
-        </script>
-          
-        <div id="commit-history"></div>
+        
+        <footer>
+            <div id="commit-history"></div>
+        </footer>
         
         
     </div>
+
 
 </body>
 </html>
