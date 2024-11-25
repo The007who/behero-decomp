@@ -35,7 +35,39 @@ body {
     display: flex;
 }
 
-
 .content div {
     width: 830px;
+}
+
+footer {
+    display: flex;
+}
+
+footer section {
+    position: relative;
+    width: 270px;
+}
+
+footer section img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    
+}
+
+footer section div {
+    position: relative;
+    z-index: 1; /* ensure text is on top of image */
+    color: #fff; /* adjust text color as needed */
+    margin-top: 55px;
+    margin-left: 10px;
+
+}
+
+footer section div li {
+    margin-top: 5px;
+}
+
+@media (max-width: 1000px) {
+
 }
