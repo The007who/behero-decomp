@@ -9,38 +9,40 @@
     <script src="js/script.js"></script>
 </head>
 <body onload="startUp();">
-    <div class="main">
-        <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 10px;">
+    <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 10px;">
 
-        <div class="menu">
-    
-            <div><a href=""><img src="resources/layout/home.png" alt="homebtn"></a></div>
-            <div><a href="{{ storyworld.url }}">STORY AND WORLD</a></div>
-            <div><a href=""><img src="resources/layout/cards.png" alt="cardsbtn"></a></div>
-            <div><a href="">HARDWARE</a></div>
+    <nav>
 
-        </div>
+        <div><a href="{% link index.html %}"><img src="resources/layout/home.png" alt="homebtn"></a></div>
+        <div><a href="">STORY AND WORLD</a></div>
+        <div><a href="{% link cards.html %}"><img src="resources/layout/cards.png" alt="cardsbtn"></a></div>
+        <div><a href="{% link hardware.html %}">HARDWARE</a></div>
 
-        <div class="content">
-            <div>
-                {{ content }}
-            </div>
+    </nav>
 
-            <iframe src="https://ghbtns.com/github-btn.html?user=The007who&repo=behero-decomp&type=star&count=true&size=large" 
-            frameborder="0" scrolling="0" width="170" height="30" title="GitHub"
-            style="margin-left: 10px;">
-            </iframe>
-        </div>
-        
-        <footer>
-            <section>
-                <img src="resources/layout/box_news.jpg" alt="news_box" draggable="false">
-                <div id="commit-history"></div>
-            </section>
-        </footer>
-        
-        
+    <div class="content">
+        <article>
+            {{ content }}
+        </article>
+
+        <iframe src="https://ghbtns.com/github-btn.html?user=The007who&repo=behero-decomp&type=star&count=true&size=large" 
+        frameborder="0" scrolling="0" width="170" height="30" title="GitHub"
+        style="margin-left: 10px;">
+        </iframe>
     </div>
+
+    <footer>
+        <section>
+            <img src="resources/layout/box_news.jpg" alt="news_box" draggable="false">
+            <div id="commit-history"></div>
+        </section>
+
+        <section>
+            <a href="{% link hardware.html %}">
+                <img src="resources/layout/box_console.jpg" alt="box_console">
+            </a>
+        </section>
+    </footer>
 
 
 </body>

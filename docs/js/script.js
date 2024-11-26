@@ -3,7 +3,7 @@ months = [
 ]
 
 function startUp() {
-    fetch('https://api.github.com/repos/The007who/behero-decomp/commits').then(response => response.json())
+    fetch('https://api.github.com/repos/The007who/behero-decomp/commits?sha=gh-pages').then(response => response.json())
     .then(data => {
         const commits = data.map(commit => {
             const date = commit.commit.author.date
@@ -19,3 +19,18 @@ function startUp() {
     });
 }
 
+
+document.getElementsByTagName("div div img").onclick = function imageClick () {
+    console.log("clicked")
+}
+
+
+function imageClick2 () {
+    const image = document.getElementsByTagName();
+
+    image.addEventListener('click', () => {
+    const currentScale = getComputedStyle(image).getPropertyValue('transform').split(' ')[0].replace('scale(', '').replace(')', '');
+    const newScale = parseFloat(currentScale) + 0.5;
+    image.style.transform = `scale(${newScale})`;}
+    );
+}
