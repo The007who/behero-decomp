@@ -1,1 +1,1 @@
-This is the branch for the wiki.
+This is the branch for the [wiki](https://the007who.github.io/behero-decomp).
