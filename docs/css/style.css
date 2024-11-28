@@ -9,6 +9,8 @@ body {
     color: #FFF;
     width: 1000px;
 	margin: auto;
+
+    font-family: Arial;
 }
 
 iframe {
@@ -40,6 +42,10 @@ nav div a {
 article {
     width: 830px;
     margin-bottom: 50px;
+}
+
+aside {
+    padding-left: 12px;
 }
 
 footer {
