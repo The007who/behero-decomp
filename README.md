@@ -1,1 +1,1 @@
-This is the branch for the [wiki](https://the007who.github.io/behero-decomp).
+This is the branch for the [wiki](https://the007who.github.io/behero-decomp). At this moment it is very incomplete, if you are able to fill in relevant information please feel free to do so.
