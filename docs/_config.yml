@@ -52,3 +52,12 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# SEO
+seo:
+  title: BeHero Wiki
+  description: >-
+    This is the BeHero Wiki. The BeHero is a italian toy released in 2010
+    by Giochi Preziosi.
+  tagline: Home of the BeHero
+  image: /resources/layout/logo.png
