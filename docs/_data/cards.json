@@ -1,0 +1,229 @@
+{
+    "Lost": {
+        "Warrior": {
+            "Horns": {
+                "Helm of Horns": {
+                    "name_ita": "Helm of Horns",
+                    "barcode": null,
+                    "attack": {
+                        "base": 2,
+                        "powerup": 3
+                    },
+                    "defense": {
+                        "base": 0,
+                        "powerup": 0
+                    },
+                    "speed": {
+                        "base": 3,
+                        "powerup": 4
+                    }
+                },
+                "desc_eng": "Combine elements of Dinosaur Horn to inflict extra damage.",
+                "desc_ita": "Combina piu elementi del Corno di Dinosauro per infliggere danni aggiuntivi."
+            }
+        },
+        "Knight": {
+            "Tortoise": {
+                "Sallet of the Tortoise": {
+                    "name_ita": "Copricapo della Tartaruga",
+                    "barcode": null,
+                    "attack": {
+                        "base": 5,
+                        "powerup": 6
+                    },
+                    "defense": {
+                        "base": 0,
+                        "powerup": 0
+                    },
+                    "speed": {
+                        "base": 0,
+                        "powerup": 1
+                    }
+                },
+                "desc_eng": "Assemble the armor of the Tortoise to gain a change of stunning enemies briefly.",
+                "desc_ita": "Assembla l'armatura della Tartaruga per avere più possibilità di stordire il nemico."
+            }
+        },
+        "Magician": {
+            "Nature": {
+                "Moccasins of Nature" : {
+                    "name_ita": "Sandali della Natura",
+                    "barcode": null,
+                    "attack": {
+                        "base": 2,
+                        "powerup": 4
+                    },
+                    "defense": {
+                        "base": 4,
+                        "powerup": 4
+                    },
+                    "speed": {
+                        "base": 0,
+                        "powerup": 1
+                    }
+                },
+                "desc_eng": "Used together, the tools of Nature give the gift of life.",
+                "desc_ita": "Usati insieme, gli strumenti della Natura donano sempre vita."
+            }
+        },
+        "Ninja": {
+            "Buried Hope": {
+                "Vest of Buried Hope": {
+                    "name_ita": "Veste della Speranza Sepolta",
+                    "barcode": null,
+                    "attack": {
+                        "base": 1,
+                        "powerup": 2
+                    },
+                    "defense": {
+                        "base": 5,
+                        "powerup": 7
+                    },
+                    "speed": {
+                        "base": 2,
+                        "powerup": 3
+                    }
+                },
+                "desc_eng": "Use items of Buried Hope together and possibly land a second blow.",
+                "desc_ita": "Usa insieme oggetti della Speranza Sepolta per poter sferrare un secondo attacco."
+            }
+        }
+    },
+    "Golden": {
+        "Magician": {
+            "Fortune": {
+                "Crown of Fortune": {
+                    "name_ita": "Corona della Fortuna",
+                    "barcode": null,
+                    "attack": {
+                        "base": 2,
+                        "powerup": 3
+                    },
+                    "defense": {
+                        "base": 3,
+                        "powerup": 4
+                    },
+                    "speed": {
+                        "base": 1,
+                        "powerup": 2
+                    }
+                },
+                "Cloak of Fortune": {
+                    "name_ita": "Mantello della Fortuna",
+                    "barcode": null,
+                    "attack": {
+                        "base": 2,
+                        "powerup": 3
+                    },
+                    "defense": {
+                        "base": 6,
+                        "powerup": 8
+                    },
+                    "speed": {
+                        "base": 0,
+                        "powerup": 1
+                    }
+                },
+                "desc_eng": "Carry more than 1 of Fortune's items to battle for miraculous healing.",
+                "desc_ita": "Porta in battaglia piu di un pezzo di Fortuna per cure miracolose."
+            }
+        },
+        "Alchemist": {
+            "Sacrifice": {
+                "Shades of the Sacrifice": {
+                    "name_ita": "Visore del Sacrificio",
+                    "barcode": null,
+                    "attack": {
+                        "base": 1,
+                        "powerup": 2
+                    },
+                    "defense": {
+                        "base": 3,
+                        "powerup": 4
+                    },
+                    "speed": {
+                        "base": 2,
+                        "powerup": 3
+                    }
+                },
+                "desc_eng": "Used together, weapons of Sacrifice force rivals to give up some of their blood.",
+                "desc_ita": "Usate insieme, le armi del Sacrificio constringono gli avversari a donarti qualche goccia del loro sangue."
+            }
+        },
+        "Ninja": {
+            "Sand": {
+                "Beast of Sand": {
+                    "name_ita": "Bestia della Sabbia",
+                    "barcode": null,
+                    "attack": {
+                        "base": 2,
+                        "powerup": 3
+                    },
+                    "defense": {
+                        "base": 0,
+                        "powerup": 0
+                    },
+                    "speed": {
+                        "base": 3,
+                        "powerup": 4
+                    }
+                },
+                "desc_eng": "With enough items, generate a sandstorm to sneak in a second attack.",
+                "desc_ita": "Crea una tempesta di sabbia con vari oggetti di questa armatura e sferra un doppio attacco!"
+            }
+        }
+    },
+    "Enchanted": {
+        "Warrior": "",
+        "Knight": "",
+        "Magician": {
+            "Darkness": {
+                "Protector of Darkness": {
+                    "name_ita": "Protezione dell'Oscurita",
+                    "barcode": null,
+                    "attack": {
+                        "base": 1,
+                        "powerup": 1
+                    },
+                    "defense": {
+                        "base": 3,
+                        "powerup": 4
+                    },
+                    "speed": {
+                        "base": 1,
+                        "powerup": 2
+                    }
+                },
+                "desc_eng": "Battle with multiple Darkness pieces to slow down your fate.",
+                "desc_ita": "Combatti con vari pezzi di Oscurita per rallentare il tuo fato."
+            }
+        },
+        "Alchemist": "",
+        "Adventurer": "",
+        "Ninja": ""
+    },
+    "Frozen": {
+        "Warrior": "",
+        "Knight": "",
+        "Magician": "",
+        "Alchemist": "",
+        "Adventurer": "",
+        "Ninja": ""
+    },
+    "New": {
+        "Warrior": "",
+        "Knight": "",
+        "Magician": "",
+        "Alchemist": "",
+        "Adventurer": "",
+        "Ninja": ""
+    },
+    "Nightmare": {
+        "Warrior": "",
+        "Knight": "",
+        "Magician": "",
+        "Alchemist": "",
+        "Adventurer": "",
+        "Ninja": ""
+    }
+}
