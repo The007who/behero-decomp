@@ -19,6 +19,10 @@ body {
     margin-left: -170px; 
 }
 
+#text-outline {
+    text-shadow: -1px -1px 0 #3b3b3b, 1px -1px 0 #3b3b3b, -1px 1px 0 #3b3b3b, 1px 1px 0 #3b3b3b;
+}
+
 nav {
     width: 685px; 
     position: absolute; 
@@ -28,10 +32,6 @@ nav {
     justify-content: space-evenly;
 }
 
-
-nav div a {
-	color: white;
-}
 
 .content {
     display: flex;
