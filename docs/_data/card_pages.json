@@ -1,0 +1,137 @@
+[
+    {
+        "name_eng": "Apocalypse",
+        "name_ita": "Apocalisse",
+        "age": "Nightmare",
+        "guild": "Alchemist",
+        "desc_eng": "Use the power of the Apocalypse to suck life from your enemy and add it to your own.",
+        "desc_ita": "Usa il potere dell'Apocalisse per rigenerare la tua salute rubandola all'avversario.",
+        "cards": []
+    },
+    {
+        "name_eng": "Buried Hope",
+        "name_ita": "Speranza Sepolta",
+        "age": "Lost",
+        "guild": "Ninja",
+        "desc_eng": "Use items of Buried Hope together and possibly land a second blow.",
+        "desc_ita": "Usa insieme oggetti della Speranza Sepolta per poter sferrare un secondo attacco.",
+        "cards": []
+    },
+    {
+        "name_eng": "Darkness",
+        "name_ita": "Oscurita",
+        "age": "Enchanted",
+        "guild": "Magician",
+        "desc_eng": "Use the power of the Apocalypse to suck life from your enemy and add it to your own.",
+        "desc_ita": "Usa il potere dell'Apocalisse per rigenerare la tua salute rubandola all'avversario.",
+        "cards": []
+    },
+    {
+        "name_eng": "Destruction",
+        "name_ita": "Distruzione",
+        "age": "Enchanted",
+        "guild": "Alchemist",
+        "desc_eng": "When combined, the items of Destruction will bleed life from your enemies.",
+        "desc_ita": "Se combinati insieme, gli oggetti della Distruzione assorbono vita dai tuoi nemici.",
+        "cards": []
+    },
+    {
+        "name_eng": "Elven Circle",
+        "name_ita": "Cerchio Elfico",
+        "age": "Frozen",
+        "guild": "Knight",
+        "desc_eng": "Force your enemy to skip a turn when carrying items from the Elven Circle.",
+        "desc_ita" : "Costringi il nemico a saltare un turno indossando piu oggetti del Cerchio Elfico.",
+        "cards": []
+    },
+    {
+        "name_eng": "Fortune",
+        "name_ita": "Fortuna",
+        "age": "Golden",
+        "guild": "Magician",
+        "desc_eng": "Carry more than 1 of Fortune's items to battle for miraculous healing.",
+        "desc_ita": "Porta in battaglia piu di un pezzo di Fortuna per cure miracolose.",
+        "cards": []
+    },
+    {
+        "name_eng": "Horns",
+        "name_ita": "Corno",
+        "age": "Lost",
+        "guild": "Warrior",
+        "desc_eng": "Combine elements of Dinosaur Horn to inflict extra damage.",
+        "desc_ita": "Combina piu elementi del Corno di Dinosauro per infliggere danni aggiuntivi.",
+        "cards": []
+    },
+    {
+        "name_eng": "Iron Hand",
+        "name_ita": "Mano di Ferro",
+        "age": "New",
+        "guild": "Adventurer",
+        "desc_eng": "With combined items from the Iron Hand, deal extreme damage at certain times.",
+        "desc_ita": "Infliggi grossi danni, grazie agli oggetti della Mano di Ferro.",
+        "cards": []
+    },
+    {
+        "name_eng": "Nature",
+        "name_ita": "Natura",
+        "age": "Lost",
+        "guild": "Magician",
+        "desc_eng": "Used together, the tools of Nature give the gift of life.",
+        "desc_ita": "Usati insieme, gli strumenti della Natura donano sempre vita.",
+        "cards": []
+    },
+    {
+        "name_eng": "Oceana",
+        "name_ita": "Oceana",
+        "age": "Frozen",
+        "guild": "Adventurer",
+        "desc_eng": "The more items of Oceana equipped, the higher chance of dealing unusual damage.",
+        "desc_ita": "Piu oggetti di Oceana indossi, piu potrai sferrare un attacco mortale.",
+        "cards": []
+    },
+    {
+        "name_eng": "Peril",
+        "name_ita": "Pericolo",
+        "age": "Nightmare",
+        "guild": "Warrior",
+        "desc_eng": "Increase the damage you deal by wielding more than 1 item of Peril.",
+        "desc_ita": "Aumenta il danno che infliggi equipaggiando piu parti dell'armatura del Pericolo.",
+        "cards": []
+    },
+    {
+        "name_eng": "Sacrifice",
+        "name_ita": "Sacrificio",
+        "age": "Golden",
+        "guild": "Alchemist",
+        "desc_eng": "Used together, weapons of Sacrifice force rivals to give up some of their blood.",
+        "desc_ita": "Usate insieme, le armi del Sacrificio constringono gli avversari a donarti qualche goccia del loro sangue.",
+        "cards": []
+    },
+    {
+        "name_eng": "Sand",
+        "name_ita": "Sabbia",
+        "age": "Golden",
+        "guild": "Ninja",
+        "desc_eng": "With enough items, generate a sandstorm to sneak in a second attack.",
+        "desc_ita": "Crea una tempesta di sabbia con vari oggetti di questa armatura e sferra un doppio attacco!",
+        "cards": []
+    },
+    {
+        "name_eng": "Shadows",
+        "name_ita": "Ombre",
+        "age": "Enchanted",
+        "guild": "Warrior",
+        "desc_eng": "Use Shadow items together to plunge enemies into darkness more quickly.",
+        "desc_ita": "Usa oggetti dell'Ombra insieme per portare piu in fretta l'oscurita sui tuoi nemici.",
+        "cards": []
+    },
+    {
+        "name_eng": "Shrieking Maiden",
+        "name_ita": "Fanciulla Urlante",
+        "age": "Nightmare",
+        "guild": "Adventurer",
+        "desc_eng": "Combine the Shrieking Maiden's items and you just might deal a mind-blowing attack!",
+        "desc_ita": "Unisci l'armatura della Fanciulla Urlante per poter infliggere grossi danni ai nemici!",
+        "cards": []
+    }
+]
