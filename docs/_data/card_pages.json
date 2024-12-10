@@ -133,5 +133,32 @@
         "desc_eng": "Combine the Shrieking Maiden's items and you just might deal a mind-blowing attack!",
         "desc_ita": "Unisci l'armatura della Fanciulla Urlante per poter infliggere grossi danni ai nemici!",
         "cards": []
+    },
+    {
+        "name_eng": "Silver Revolution",
+        "name_ita": "Rivoluzione d'Argento",
+        "age": "New",
+        "guild": "Ninja",
+        "desc_eng": "Work in extra hits per turn by wearing multiple items of the Silver Revolution.",
+        "desc_ita": "Attacca due volte indossando vari oggetti della Rivoluzione d'Argento.",
+        "cards": []
+    },
+    {
+        "name_eng": "Steel",
+        "name_ita": "Acciaio",
+        "age": "New",
+        "guild": "Knight",
+        "desc_eng": "The more steel you equip, the more likely your opponent loses his next attack.",
+        "desc_ita": "Piu Acciaio equipaggi, piu il tuo nemico richiera di fallire il prossimo attacco.",
+        "cards": []
+    },
+    {
+        "name_eng": "Tortoise",
+        "name_ita": "Tartaruga",
+        "age": "Lost",
+        "guild": "Knight",
+        "desc_eng": "Assemble the armor of the Tortoise to gain a change of stunning enemies briefly.",
+        "desc_ita": "Assembla l'armatura della Tartaruga per avere più possibilità di stordire il nemico.",
+        "cards": []
     }
 ]
