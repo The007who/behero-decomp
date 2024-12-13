@@ -6,7 +6,16 @@
         "guild": "Alchemist",
         "desc_eng": "Use the power of the Apocalypse to suck life from your enemy and add it to your own.",
         "desc_ita": "Usa il potere dell'Apocalisse per rigenerare la tua salute rubandola all'avversario.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Shoes of the Apocalypse",
+                "name_ita": "Calzature dell'Apocalisse",
+                "barcode": "Unknown",
+                "attack": [2, 4],
+                "defense": [3, 3],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Buried Hope",
@@ -15,7 +24,16 @@
         "guild": "Ninja",
         "desc_eng": "Use items of Buried Hope together and possibly land a second blow.",
         "desc_ita": "Usa insieme oggetti della Speranza Sepolta per poter sferrare un secondo attacco.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Vest of Buried Hope",
+                "name_ita": "Veste della Speranza Sepolta",
+                "barcode": "Unknown",
+                "attack": [1, 2],
+                "defense": [5, 7],
+                "speed": [2, 3]
+            }
+        ]
     },
     {
         "name_eng": "Darkness",
@@ -24,7 +42,16 @@
         "guild": "Magician",
         "desc_eng": "Use the power of the Apocalypse to suck life from your enemy and add it to your own.",
         "desc_ita": "Usa il potere dell'Apocalisse per rigenerare la tua salute rubandola all'avversario.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Protector of Darkness",
+                "name_ita": "Protezione dell'Oscurita",
+                "barcode": "Unknown",
+                "attack": [1, 1],
+                "defense": [3, 4],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Destruction",
@@ -33,7 +60,24 @@
         "guild": "Alchemist",
         "desc_eng": "When combined, the items of Destruction will bleed life from your enemies.",
         "desc_ita": "Se combinati insieme, gli oggetti della Distruzione assorbono vita dai tuoi nemici.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Defense of Destruction",
+                "name_ita": "Difesa della Distruzione",
+                "barcode": "Unknown",
+                "attack": [0, 0],
+                "defense": [3, 4],
+                "speed": [2, 3]
+            },
+            {
+                "name_eng": "Bludgeon of Destruction",
+                "name_ita": "Dispositivo della Distruzione",
+                "barcode": "Unknown",
+                "attack": [2, 3],
+                "defense": [2, 2],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Elven Circle",
@@ -42,7 +86,42 @@
         "guild": "Knight",
         "desc_eng": "Force your enemy to skip a turn when carrying items from the Elven Circle.",
         "desc_ita" : "Costringi il nemico a saltare un turno indossando piu oggetti del Cerchio Elfico.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Breastplate of the Elven Circle",
+                "name_ita": "Bardatura del Cerchio Elfico",
+                "barcode": "Unknown",
+                "attack": [1, 1],
+                "defense": [4, 6],
+                "speed": [0, 0]
+            },
+            {
+                "name_eng": "Spirit of the Elven Circle",
+                "name_ita": "Spirito del Cerchio Elfico",
+                "barcode": "Unknown",
+                "attack": [6, 8],
+                "defense": [2, 3],
+                "speed": [0, 1]
+            }
+        ]
+    },
+    {
+        "name_eng": "Entrapment",
+        "name_ita": "Trappola",
+        "age": "New",
+        "guild": "Magician",
+        "desc_eng": "Carry with you more than one Entrapment piece to access self-healing.",
+        "desc_ita": "Indossa piu di un pezzo della Trappola per poterti curare da solo.",
+        "cards": [
+            {
+                "name_eng": "Crown of Entrapment",
+                "name_ita": "Corona della Trappola",
+                "barcode": "Unknown",
+                "attack": [1, 2],
+                "defense": [4, 4],
+                "speed": [0, 1]
+            }
+        ]
     },
     {
         "name_eng": "Fortune",
@@ -51,7 +130,60 @@
         "guild": "Magician",
         "desc_eng": "Carry more than 1 of Fortune's items to battle for miraculous healing.",
         "desc_ita": "Porta in battaglia piu di un pezzo di Fortuna per cure miracolose.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Crown of Fortune",
+                "name_ita": "Corona della Fortuna",
+                "barcode": "Unknown",
+                "attack": [2, 3],
+                "defense": [3, 4],
+                "speed": [1, 2]
+            },
+            {
+                "name_eng": "Cloak of Fortune",
+                "name_ita": "Mantello della Fortuna",
+                "barcode": "Unknown",
+                "attack": [2, 3],
+                "defense": [6, 8],
+                "speed": [0, 1]
+            }
+        ]
+    },
+    {
+        "name_eng": "Good Intentions",
+        "name_ita": "Buone Intenzioni",
+        "age": "Nightmare",
+        "guild": "Knight",
+        "desc_eng": "When faced with multiple items of Good Intentions your enemy may lose his ability to attack you.",
+        "desc_ita": "Se (...) piu oggetti delle Buone Intenzioni, i nemici potrebbero perdere le possibilita di attaccarti.",
+        "cards": [
+            {
+                "name_eng": "Breastplate of Good Intensions",
+                "name_ita": "Bardatura delle Buone Intenzioni",
+                "barcode": "Unknown",
+                "attack": [3, 4],
+                "defense": [2, 3],
+                "speed": [0, 0]
+            }
+        ]
+    },
+    {
+        "name_eng": "Hidden Crescent",
+        "name_ita": "Luna Nascosta",
+        "age": "Golden",
+        "guild": "Knight",
+        "desc_eng": "Force your foe to skip 1 turn with the special powers of the Hidden Crescent.",
+        "desc_ita": "Costringi il nemico a saltare un turno con il potere speciale della Luna Nascosta.",
+        "cards": [
+            {
+                "name_eng": "Spear of the Hidden Crescent",
+                "name_ita": "Lancia della Luna Nascosta",
+                "barcode": "Unknown",
+                "attack": [5, 6],
+                "defense": [0, 1],
+                "speed": [0, 0]
+            }
+        ]
     },
     {
         "name_eng": "Horns",
@@ -60,7 +192,16 @@
         "guild": "Warrior",
         "desc_eng": "Combine elements of Dinosaur Horn to inflict extra damage.",
         "desc_ita": "Combina piu elementi del Corno di Dinosauro per infliggere danni aggiuntivi.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Helm of Horns",
+                "name_ita": "Elmo di Corno",
+                "barcode": "Unknown",
+                "attack": [2, 3],
+                "defense": [0, 0],
+                "speed": [3, 4]
+            }
+        ]
     },
     {
         "name_eng": "Iron Hand",
@@ -69,7 +210,16 @@
         "guild": "Adventurer",
         "desc_eng": "With combined items from the Iron Hand, deal extreme damage at certain times.",
         "desc_ita": "Infliggi grossi danni, grazie agli oggetti della Mano di Ferro.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Targe of the Iron Hand",
+                "name_ita": "Copertura della Mano di Ferro",
+                "barcode": "Unknown",
+                "attack": [1, 1],
+                "defense": [3, 5],
+                "speed": [2, 3]
+            }
+        ]
     },
     {
         "name_eng": "Nature",
@@ -78,7 +228,16 @@
         "guild": "Magician",
         "desc_eng": "Used together, the tools of Nature give the gift of life.",
         "desc_ita": "Usati insieme, gli strumenti della Natura donano sempre vita.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Moccasins of Nature",
+                "name_ita": "Sandali della Natura",
+                "barcode": "Unknown",
+                "attack": [2, 4],
+                "defense": [4, 4],
+                "speed": [0, 1]
+            }
+        ]
     },
     {
         "name_eng": "Oceana",
@@ -87,7 +246,42 @@
         "guild": "Adventurer",
         "desc_eng": "The more items of Oceana equipped, the higher chance of dealing unusual damage.",
         "desc_ita": "Piu oggetti di Oceana indossi, piu potrai sferrare un attacco mortale.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Tunic of Oceana",
+                "name_ita": "Tunia di Oceana",
+                "barcode": "Unknown",
+                "attack": [1, 1],
+                "defense": [3, 4],
+                "speed": [1, 2]
+            },
+            {
+                "name_eng": "Mace of Oceana",
+                "name_ita": "Mazza di Oceana",
+                "barcode": "Unknown",
+                "attack": [0, 1],
+                "defense": [2, 2],
+                "speed": [3, 4]
+            }
+        ]
+    },
+    {
+        "name_eng": "Odysseus",
+        "name_ita": "Odisseo",
+        "age": "Frozen",
+        "guild": "Warrior",
+        "desc_eng": "Inflict greater damage when equipped with multiple pieces of Odysseus' garb.",
+        "desc_ita": "Infliggi danni maggiori se sei equipaggiato (?) elementi degli abiti di Odisseo.",
+        "cards": [
+            {
+                "name_eng": "Helm of Odysseus",
+                "name_ita": "Elmo di Odisseo",
+                "barcode": "Unknown",
+                "attack": [1, 1],
+                "defense": [2, 3],
+                "speed": [2, 3]
+            }
+        ]
     },
     {
         "name_eng": "Peril",
@@ -96,7 +290,24 @@
         "guild": "Warrior",
         "desc_eng": "Increase the damage you deal by wielding more than 1 item of Peril.",
         "desc_ita": "Aumenta il danno che infliggi equipaggiando piu parti dell'armatura del Pericolo.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Boots of Peril",
+                "name_ita": "Stivali del Pericolo",
+                "barcode": "Unknown",
+                "attack": [4, 6],
+                "defense": [1, 1],
+                "speed": [1, 2]
+            },
+            {
+                "name_eng": "Companion of Peril",
+                "name_ita": "Compagno del Pericolo",
+                "barcode": "Unknown",
+                "attack": [3, 4],
+                "defense": [1, 1],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Sacrifice",
@@ -105,7 +316,16 @@
         "guild": "Alchemist",
         "desc_eng": "Used together, weapons of Sacrifice force rivals to give up some of their blood.",
         "desc_ita": "Usate insieme, le armi del Sacrificio constringono gli avversari a donarti qualche goccia del loro sangue.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Shades of the Sacrifice",
+                "name_ita": "Visore del Sacrificio",
+                "barcode": "Unknown",
+                "attack": [1, 2],
+                "defense": [3, 4],
+                "speed": [2, 3]
+            }
+        ]
     },
     {
         "name_eng": "Sand",
@@ -114,7 +334,16 @@
         "guild": "Ninja",
         "desc_eng": "With enough items, generate a sandstorm to sneak in a second attack.",
         "desc_ita": "Crea una tempesta di sabbia con vari oggetti di questa armatura e sferra un doppio attacco!",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Beast of Sand",
+                "name_ita": "Bestia della Sabbia",
+                "barcode": "Unknown",
+                "attack": [2, 3],
+                "defense": [0, 0],
+                "speed": [3, 4]
+            }
+        ]
     },
     {
         "name_eng": "Shadows",
@@ -123,7 +352,16 @@
         "guild": "Warrior",
         "desc_eng": "Use Shadow items together to plunge enemies into darkness more quickly.",
         "desc_ita": "Usa oggetti dell'Ombra insieme per portare piu in fretta l'oscurita sui tuoi nemici.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Guard of Shadows",
+                "name_ita": "Guardia delle Ombre",
+                "barcode": "Unknown",
+                "attack": [0, 0],
+                "defense": [4, 5],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Shrieking Maiden",
@@ -132,7 +370,16 @@
         "guild": "Adventurer",
         "desc_eng": "Combine the Shrieking Maiden's items and you just might deal a mind-blowing attack!",
         "desc_ita": "Unisci l'armatura della Fanciulla Urlante per poter infliggere grossi danni ai nemici!",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Ally of the Shrieking Maiden",
+                "name_ita": "Alleato della Fanciulla Urlante",
+                "barcode": "Unknown",
+                "attack": [1, 2],
+                "defense": [2, 2],
+                "speed": [2, 3]
+            }
+        ]
     },
     {
         "name_eng": "Silver Revolution",
@@ -141,7 +388,24 @@
         "guild": "Ninja",
         "desc_eng": "Work in extra hits per turn by wearing multiple items of the Silver Revolution.",
         "desc_ita": "Attacca due volte indossando vari oggetti della Rivoluzione d'Argento.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Treads of the Silver Revolution",
+                "name_ita": "Scarponi della Rivoluzione d'Argento",
+                "barcode": "Unknown",
+                "attack": [1, 2],
+                "defense": [0, 0],
+                "speed": [4, 5]
+            },
+            {
+                "name_eng": "Dagger of the Silver Revolution",
+                "name_ita": "Pugnale della Rivoluzione d'Argento",
+                "barcode": "Unknown",
+                "attack": [7, 9],
+                "defense": [0, 1],
+                "speed": [1, 2]
+            }
+        ]
     },
     {
         "name_eng": "Steel",
@@ -150,7 +414,16 @@
         "guild": "Knight",
         "desc_eng": "The more steel you equip, the more likely your opponent loses his next attack.",
         "desc_ita": "Piu Acciaio equipaggi, piu il tuo nemico richiera di fallire il prossimo attacco.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Cudgel of Steel",
+                "name_ita": "Randello d'Acciaio",
+                "barcode": "Unknown",
+                "attack": [8, 10],
+                "defense": [0, 2],
+                "speed": [0, 0]
+            }
+        ]
     },
     {
         "name_eng": "Tortoise",
@@ -159,6 +432,15 @@
         "guild": "Knight",
         "desc_eng": "Assemble the armor of the Tortoise to gain a change of stunning enemies briefly.",
         "desc_ita": "Assembla l'armatura della Tartaruga per avere più possibilità di stordire il nemico.",
-        "cards": []
+        "cards": [
+            {
+                "name_eng": "Sallet of the Tortoise",
+                "name_ita": "Copricapo della Tartaruga",
+                "barcode": "Unknown",
+                "attack": [5, 6],
+                "defense": [0, 0],
+                "speed": [0, 1]
+            }
+        ]
     }
 ]

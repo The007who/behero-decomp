@@ -1,8 +1,16 @@
-months = [
+var months = [
     "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
 ]
 
 function startUp() {
+    
+    if (localStorage.getItem('newsQuery') !== null) {
+        document.getElementById('commit-history').innerHTML = localStorage.getItem('newsQuery');
+        return;
+    }
+
+
+
     let msgLength = 0;
     fetch('https://api.github.com/repos/The007who/behero-decomp/commits?sha=gh-pages').then(response => response.json())
     .then(data => {
@@ -23,6 +31,8 @@ function startUp() {
         });
 
         document.getElementById('commit-history').innerHTML = commits.join('');
+        localStorage.setItem('newsQuery', String(commits));
+
     });
 }
 

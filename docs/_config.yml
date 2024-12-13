@@ -64,10 +64,10 @@ seo:
   image: /resources/layout/logo.png
 
 # Page gen
-page_gen: true
+page_gen-dirs: false
 
 page_gen:
 - data: 'card_pages'
   template: 'card_collection'
-  name: 'name_eng'
-  dir: ''
+  name_expr: record['name_eng']
+  dir: 'card'
