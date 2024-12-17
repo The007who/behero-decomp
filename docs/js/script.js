@@ -30,7 +30,7 @@ function startUp() {
             }
         });
 
-        document.getElementById('commit-history').innerHTML = commits.join('');
+        document.getElementById('commit-history').innerHTML = commits;
         localStorage.setItem('newsQuery', String(commits));
 
     });
