@@ -19,6 +19,15 @@ body {
     margin-left: -170px; 
 }
 
+.langSwitch {
+    position: absolute;
+    top: 272px;
+    margin-left: 832px;
+    width: 160px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 #text-outline {
     text-shadow: -1px -1px 0 #3b3b3b, 1px -1px 0 #3b3b3b, -1px 1px 0 #3b3b3b, 1px 1px 0 #3b3b3b;
 }

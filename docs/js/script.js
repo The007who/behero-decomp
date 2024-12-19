@@ -1,15 +1,18 @@
-var months = [
-    "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
-]
 
 function startUp() {
-    
+
+    // Set correct lang
+    switchLangText();
+
+    // News Query
     if (localStorage.getItem('newsQuery') !== null) {
         document.getElementById('commit-history').innerHTML = localStorage.getItem('newsQuery');
         return;
     }
 
-
+    let months = [
+        "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
+    ]
 
     let msgLength = 0;
     fetch('https://api.github.com/repos/The007who/behero-decomp/commits?sha=gh-pages').then(response => response.json())
@@ -30,25 +33,59 @@ function startUp() {
             }
         });
 
-        document.getElementById('commit-history').innerHTML = commits;
-        localStorage.setItem('newsQuery', String(commits));
+        document.getElementById('commit-history').innerHTML = commits[0];
+        localStorage.setItem('newsQuery', commits[0]);
 
     });
 }
 
 
-
-function imageClick2 () {
-    const image = document.getElementsByClassName('content');
-
-    image.addEventListener('click', () => {
-        const currentScale = getComputedStyle(image)
-            .getPropertyValue('transform')
-            .split(' ')[0]
-            .replace('scale(', '')
-            .replace(')', '');
-
-        const newScale = parseFloat(currentScale) + 0.5;
-        image.style.transform = `scale(${newScale})`;
-    });
+function buttonLang( lang ) {
+    if (localStorage.getItem('lang') !== lang) {
+        localStorage.setItem('lang', lang);
+        switchLangText();
+    }
 }
+
+function switchLangText() {
+    let showLang = localStorage.getItem('lang');
+    if (showLang == null) {
+        localStorage.setItem('lang', 'ita');
+        return;
+    }
+
+    let hideLang = "";
+    if (showLang == 'ita') {
+        hideLang = 'eng';
+    } else {
+        hideLang = 'ita';
+    }
+
+    let className = "." + showLang + "-text";
+    let classItems = document.querySelectorAll(className);
+    for (const element of classItems) {
+        element.style.display = 'block';
+    }
+
+    className = "." + hideLang + "-text";
+    classItems = document.querySelectorAll(className);
+    for (const element of classItems) {
+        element.style.display = 'none';
+    }
+}
+
+
+// function imageClick2 () {
+//     const image = document.getElementsByClassName('content');
+// 
+//     image.addEventListener('click', () => {
+//         const currentScale = getComputedStyle(image)
+//             .getPropertyValue('transform')
+//             .split(' ')[0]
+//             .replace('scale(', '')
+//             .replace(')', '');
+// 
+//         const newScale = parseFloat(currentScale) + 0.5;
+//         image.style.transform = `scale(${newScale})`;
+//     });
+// }
