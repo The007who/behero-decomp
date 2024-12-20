@@ -28,6 +28,22 @@ body {
     justify-content: space-evenly;
 }
 
+.search-bar {
+    position: absolute;
+    top: 225px;
+    margin-left: 500px;
+    background-image: url('../resources/layout/campo_form.jpg');
+}
+
+.search-bar input {
+    background-color: transparent;
+    border: 0;
+    width: 152px;
+    height: 18px;
+    outline: none;
+}
+
+
 #text-outline {
     text-shadow: -1px -1px 0 #3b3b3b, 1px -1px 0 #3b3b3b, -1px 1px 0 #3b3b3b, 1px 1px 0 #3b3b3b;
 }

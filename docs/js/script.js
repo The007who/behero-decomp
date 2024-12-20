@@ -5,8 +5,8 @@ function startUp() {
     switchLangText();
 
     // News Query
-    if (localStorage.getItem('newsQuery') !== null) {
-        document.getElementById('commit-history').innerHTML = localStorage.getItem('newsQuery');
+    if (sessionStorage.getItem('newsQuery') !== null) {
+        document.getElementById('commit-history').innerHTML = sessionStorage.getItem('newsQuery');
         return;
     }
 
@@ -17,7 +17,7 @@ function startUp() {
     let msgLength = 0;
     fetch('https://api.github.com/repos/The007who/behero-decomp/commits?sha=gh-pages').then(response => response.json())
     .then(data => {
-        const commits = data.map(commit => {
+        let commits = data.map(commit => {
             const date = commit.commit.author.date;
             const message = commit.commit.message;
             const link = commit.html_url;
@@ -26,31 +26,31 @@ function startUp() {
                 + date.substring(0, 4);
 
             msgLength += new_date.length + message.length + 2;
-            if (msgLength < 250) {
+            if (msgLength < 230) {
                 return `<li><a href="${link}">${new_date}: ${message}</a></li>`;
             } else {
                 return '';
             }
         });
 
-        document.getElementById('commit-history').innerHTML = commits[0];
-        localStorage.setItem('newsQuery', commits[0]);
-
+        commits = commits.join('');
+        document.getElementById('commit-history').innerHTML = commits;
+        sessionStorage.setItem('newsQuery', commits);
     });
 }
 
 
 function buttonLang( lang ) {
-    if (localStorage.getItem('lang') !== lang) {
-        localStorage.setItem('lang', lang);
+    if (sessionStorage.getItem('lang') !== lang) {
+        sessionStorage.setItem('lang', lang);
         switchLangText();
     }
 }
 
 function switchLangText() {
-    let showLang = localStorage.getItem('lang');
+    let showLang = sessionStorage.getItem('lang');
     if (showLang == null) {
-        localStorage.setItem('lang', 'ita');
+        sessionStorage.setItem('lang', 'ita');
         return;
     }
 
