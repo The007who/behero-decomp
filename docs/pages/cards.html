@@ -1,0 +1,45 @@
+---
+layout: default
+title: Cards
+---
+
+<article>
+
+    <h1>Cards page!</h1>
+
+    <p>
+        Missing cards! Feel free to send missing cards to complete collection.
+    </p>
+
+    <div></div>
+    <p>Back of the card</p>
+    <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" alt="backcard" width="33%">
+
+
+    <p>
+        Collections seem to be made of a combination of the Age and the Guild. There are 6 Ages and 6 Guilds, meaning there are possibly
+        36 collections. Each collection has 6 cards, therefore there are possibly 216 cards. 
+        There are 24 confirmed cards(confirmed meaning a high res scan of the card).
+    </p>
+    
+    <p>
+        Total cards: <span style="font-weight: bold;">24/216 (11.11%</span>)
+    </p>
+
+    <h1>Cards List</h1>
+    {% assign ages = "Lost-Golden-Enchanted-Frozen-New-Nightmare" | split: '-' %}
+    {% for age in ages %}
+        <p>{{ age }}</p>
+        {% for collection_list in site.data.cardpages %}
+            {% if collection_list.age == age %}
+                <a href="{{ collection_list.name_eng | datapage_url: 'collection' | relative_url }}">
+                    <h1 class="ita-text">{{ collection_list.name_ita }}</h1>
+                    <h1 class="eng-text" style="display: none;">{{ collection_list.name_eng }}</h1>
+                </a>
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+</article>
+
+<aside></aside>

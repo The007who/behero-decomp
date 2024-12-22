@@ -2,7 +2,49 @@
 layout: default
 title: {{ page.name_eng }}
 ---
+<article>
+    <div style="display: flex; align-items: center;">
+        <div class="ita-text"><h1>{{ page.name_ita }}</h1></div>
+        <div class="eng-text" style="display: none;"><h1>{{ page.name_eng }}</h1></div>
+        <img 
+        src="{{ 'resources/ageicons/' | append: page.age | downcase | replace: ' ', '-' | append: 'age-icon.png' | relative_url }}" 
+        alt="age-icon"
+        style="width: 5%; margin: 2%;">
+        <p class="ita-text">({{ page.guild_ita }})</p>
+        <p class="eng-text" style="display: none;">({{ page.guild_eng }})</p>
+    </div>
 
-<h1>{{ page.name_eng }}</h1>
+    <div class="ita-text"><p>{{ page.desc_ita }}</p></div>
+    <div class="eng-text" style="display: none;"><p>{{ page.desc_eng }}</p></div>
 
-<p>{{ page.desc_eng }}</p>
+
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end;">
+        {% for card in page.cards %}
+            <div style="width: 30%;">
+                <img 
+                src="{{ 'resources/cards/' 
+                        | append: page.name_eng
+                        | append: '/'
+                        | append: card.name_eng
+                        | downcase 
+                        | replace: ' ', '-'
+                        | append: '.jpg'
+                        | relative_url }}" 
+                alt="card"
+                style="width: 100%;">
+                <p class="ita-text">{{ card.name_ita }}</p>
+                <p class="eng-text" style="display: none;">{{ card.name_eng }}</p>
+                <p>Attack: {{ card.attack[0] }}|{{ card.attack[1] }}</p>
+                <p>Defense: {{ card.defense[0] }}|{{ card.defense[1] }}</p>
+                <p>Speed: {{ card.speed[0] }}|{{ card.speed[1] }}</p>
+                <p>Barcode: {{ card.barcode }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+
+</article>
+
+<aside>
+    <p>This is the aside text.</p>
+</aside>

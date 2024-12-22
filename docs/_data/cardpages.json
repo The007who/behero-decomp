@@ -3,7 +3,8 @@
         "name_eng": "Apocalypse",
         "name_ita": "Apocalisse",
         "age": "Nightmare",
-        "guild": "Alchemist",
+        "guild_eng": "Alchemist",
+        "guild_ita": "Alchimista",
         "desc_eng": "Use the power of the Apocalypse to suck life from your enemy and add it to your own.",
         "desc_ita": "Usa il potere dell'Apocalisse per rigenerare la tua salute rubandola all'avversario.",
         "cards": [
@@ -21,7 +22,8 @@
         "name_eng": "Buried Hope",
         "name_ita": "Speranza Sepolta",
         "age": "Lost",
-        "guild": "Ninja",
+        "guild_eng": "Ninja",
+        "guild_ita": "Ninja",
         "desc_eng": "Use items of Buried Hope together and possibly land a second blow.",
         "desc_ita": "Usa insieme oggetti della Speranza Sepolta per poter sferrare un secondo attacco.",
         "cards": [
@@ -37,9 +39,10 @@
     },
     {
         "name_eng": "Darkness",
-        "name_ita": "Oscurita",
+        "name_ita": "Oscurità",
         "age": "Enchanted",
-        "guild": "Magician",
+        "guild_eng": "Magician",
+        "guild_ita": "Mago",
         "desc_eng": "Battle with multiple Darkness pieces to slow down your fate.",
         "desc_ita": "Combatti con vari pezzi di Oscurità per rallentare il tuo fato.",
         "cards": [
@@ -57,7 +60,8 @@
         "name_eng": "Destruction",
         "name_ita": "Distruzione",
         "age": "Enchanted",
-        "guild": "Alchemist",
+        "guild_eng": "Alchemist",
+        "guild_ita": "Alchimista",
         "desc_eng": "When combined, the items of Destruction will bleed life from your enemies.",
         "desc_ita": "Se combinati insieme, gli oggetti della Distruzione assorbono vita dai tuoi nemici.",
         "cards": [
@@ -83,7 +87,8 @@
         "name_eng": "Elven Circle",
         "name_ita": "Cerchio Elfico",
         "age": "Frozen",
-        "guild": "Knight",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
         "desc_eng": "Force your enemy to skip a turn when carrying items from the Elven Circle.",
         "desc_ita" : "Costringi il nemico a saltare un turno indossando più oggetti del Cerchio Elfico.",
         "cards": [
@@ -106,28 +111,11 @@
         ]
     },
     {
-        "name_eng": "Entrapment",
-        "name_ita": "Trappola",
-        "age": "New",
-        "guild": "Magician",
-        "desc_eng": "Carry with you more than one Entrapment piece to access self-healing.",
-        "desc_ita": "Indossa più di un pezzo della Trappola per poterti curare da solo.",
-        "cards": [
-            {
-                "name_eng": "Crown of Entrapment",
-                "name_ita": "Corona della Trappola",
-                "barcode": "Unknown",
-                "attack": [1, 2],
-                "defense": [4, 4],
-                "speed": [0, 1]
-            }
-        ]
-    },
-    {
         "name_eng": "Fortune",
         "name_ita": "Fortuna",
         "age": "Golden",
-        "guild": "Magician",
+        "guild_eng": "Magician",
+        "guild_ita": "Mago",
         "desc_eng": "Carry more than 1 of Fortune's items to battle for miraculous healing.",
         "desc_ita": "Porta in battaglia più di un pezzo di Fortuna per cure miracolose.",
         "cards": [
@@ -150,46 +138,11 @@
         ]
     },
     {
-        "name_eng": "Good Intentions",
-        "name_ita": "Buone Intenzioni",
-        "age": "Nightmare",
-        "guild": "Knight",
-        "desc_eng": "When faced with multiple items of Good Intentions your enemy may lose his ability to attack you.",
-        "desc_ita": "Se (?...) più oggetti delle Buone Intenzioni, i nemici potrebbero perdere le possibilita di attaccarti.",
-        "cards": [
-            {
-                "name_eng": "Breastplate of Good Intensions",
-                "name_ita": "Bardatura delle Buone Intenzioni",
-                "barcode": "Unknown",
-                "attack": [3, 4],
-                "defense": [2, 3],
-                "speed": [0, 0]
-            }
-        ]
-    },
-    {
-        "name_eng": "Hidden Crescent",
-        "name_ita": "Luna Nascosta",
-        "age": "Golden",
-        "guild": "Knight",
-        "desc_eng": "Force your foe to skip 1 turn with the special powers of the Hidden Crescent.",
-        "desc_ita": "Costringi il nemico a saltare un turno con il potere speciale della Luna Nascosta.",
-        "cards": [
-            {
-                "name_eng": "Spear of the Hidden Crescent",
-                "name_ita": "Lancia della Luna Nascosta",
-                "barcode": "Unknown",
-                "attack": [5, 6],
-                "defense": [0, 1],
-                "speed": [0, 0]
-            }
-        ]
-    },
-    {
         "name_eng": "Horns",
         "name_ita": "Corno",
         "age": "Lost",
-        "guild": "Warrior",
+        "guild_eng": "Warrior",
+        "guild_ita": "Guerriero",
         "desc_eng": "Combine elements of Dinosaur Horn to inflict extra damage.",
         "desc_ita": "Combina più elementi del Corno di Dinosauro per infliggere danni aggiuntivi.",
         "cards": [
@@ -207,7 +160,8 @@
         "name_eng": "Iron Hand",
         "name_ita": "Mano di Ferro",
         "age": "New",
-        "guild": "Adventurer",
+        "guild_eng": "Adventurer",
+        "guild_ita": "Avventuriero",
         "desc_eng": "With combined items from the Iron Hand, deal extreme damage at certain times.",
         "desc_ita": "Infliggi grossi danni, grazie agli oggetti della Mano di Ferro.",
         "cards": [
@@ -225,7 +179,8 @@
         "name_eng": "Nature",
         "name_ita": "Natura",
         "age": "Lost",
-        "guild": "Magician",
+        "guild_eng": "Magician",
+        "guild_ita": "Mago",
         "desc_eng": "Used together, the tools of Nature give the gift of life.",
         "desc_ita": "Usati insieme, gli strumenti della Natura donano sempre vita.",
         "cards": [
@@ -243,13 +198,14 @@
         "name_eng": "Oceana",
         "name_ita": "Oceana",
         "age": "Frozen",
-        "guild": "Adventurer",
+        "guild_eng": "Adventurer",
+        "guild_ita": "Avventuriero",
         "desc_eng": "The more items of Oceana equipped, the higher chance of dealing unusual damage.",
         "desc_ita": "Più oggetti di Oceana indossi, più potrai sferrare un attacco mortale.",
         "cards": [
             {
                 "name_eng": "Tunic of Oceana",
-                "name_ita": "Tunia di Oceana",
+                "name_ita": "Tunica di Oceana",
                 "barcode": "Unknown",
                 "attack": [1, 1],
                 "defense": [3, 4],
@@ -266,28 +222,11 @@
         ]
     },
     {
-        "name_eng": "Odysseus",
-        "name_ita": "Odisseo",
-        "age": "Frozen",
-        "guild": "Warrior",
-        "desc_eng": "Inflict greater damage when equipped with multiple pieces of Odysseus' garb.",
-        "desc_ita": "Infliggi danni maggiori se sei equipaggiato con elementi degli abiti di Odisseo.",
-        "cards": [
-            {
-                "name_eng": "Helm of Odysseus",
-                "name_ita": "Elmo di Odisseo",
-                "barcode": "Unknown",
-                "attack": [1, 1],
-                "defense": [2, 3],
-                "speed": [2, 3]
-            }
-        ]
-    },
-    {
         "name_eng": "Peril",
         "name_ita": "Pericolo",
         "age": "Nightmare",
-        "guild": "Warrior",
+        "guild_eng": "Warrior",
+        "guild_ita": "Guerriero",
         "desc_eng": "Increase the damage you deal by wielding more than 1 item of Peril.",
         "desc_ita": "Aumenta il danno che infliggi equipaggiando più parti dell'armatura del Pericolo.",
         "cards": [
@@ -313,7 +252,8 @@
         "name_eng": "Sacrifice",
         "name_ita": "Sacrificio",
         "age": "Golden",
-        "guild": "Alchemist",
+        "guild_eng": "Alchemist",
+        "guild_ita": "Alchimista",
         "desc_eng": "Used together, weapons of Sacrifice force rivals to give up some of their blood.",
         "desc_ita": "Usate insieme, le armi del Sacrificio constringono gli avversari a donarti qualche goccia del loro sangue.",
         "cards": [
@@ -331,7 +271,8 @@
         "name_eng": "Sand",
         "name_ita": "Sabbia",
         "age": "Golden",
-        "guild": "Ninja",
+        "guild_eng": "Ninja",
+        "guild_ita": "Ninja",
         "desc_eng": "With enough items, generate a sandstorm to sneak in a second attack.",
         "desc_ita": "Crea una tempesta di sabbia con vari oggetti di questa armatura e sferra un doppio attacco!",
         "cards": [
@@ -349,7 +290,8 @@
         "name_eng": "Shadows",
         "name_ita": "Ombre",
         "age": "Enchanted",
-        "guild": "Warrior",
+        "guild_eng": "Warrior",
+        "guild_ita": "Guerriero",
         "desc_eng": "Use Shadow items together to plunge enemies into darkness more quickly.",
         "desc_ita": "Usa oggetti dell'Ombra insieme per portare più in fretta l'oscurità sui tuoi nemici.",
         "cards": [
@@ -367,7 +309,8 @@
         "name_eng": "Shrieking Maiden",
         "name_ita": "Fanciulla Urlante",
         "age": "Nightmare",
-        "guild": "Adventurer",
+        "guild_eng": "Adventurer",
+        "guild_ita": "Avventuriero",
         "desc_eng": "Combine the Shrieking Maiden's items and you just might deal a mind-blowing attack!",
         "desc_ita": "Unisci l'armatura della Fanciulla Urlante per poter infliggere grossi danni ai nemici!",
         "cards": [
@@ -385,7 +328,8 @@
         "name_eng": "Silver Revolution",
         "name_ita": "Rivoluzione d'Argento",
         "age": "New",
-        "guild": "Ninja",
+        "guild_eng": "Ninja",
+        "guild_ita": "Ninja",
         "desc_eng": "Work in extra hits per turn by wearing multiple items of the Silver Revolution.",
         "desc_ita": "Attacca due volte indossando vari oggetti della Rivoluzione d'Argento.",
         "cards": [
@@ -411,7 +355,8 @@
         "name_eng": "Steel",
         "name_ita": "Acciaio",
         "age": "New",
-        "guild": "Knight",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
         "desc_eng": "The more steel you equip, the more likely your opponent loses his next attack.",
         "desc_ita": "Più Acciaio equipaggi, più il tuo nemico rischierà di fallire il prossimo attacco.",
         "cards": [
@@ -429,7 +374,8 @@
         "name_eng": "Tortoise",
         "name_ita": "Tartaruga",
         "age": "Lost",
-        "guild": "Knight",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
         "desc_eng": "Assemble the armor of the Tortoise to gain a change of stunning enemies briefly.",
         "desc_ita": "Assembla l'armatura della Tartaruga per avere più possibilità di stordire il nemico.",
         "cards": [

@@ -16,6 +16,9 @@ gem "github-pages", "~> 232", group: :jekyll_plugins
 # If you have any plugins, put them here!
 group :jekyll_plugins do
   gem "jekyll-feed", "~> 0.12"
+  
+  # Data Pages Generator
+  gem "jekyll-datapage-generator"
 end
 
 # Windows and JRuby does not include zoneinfo files, so bundle the tzinfo-data gem
@@ -34,6 +37,3 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 
 # SEO
 gem 'jekyll-seo-tag'
-
-# Data Pages Generator
-gem "jekyll-datapage-generator"

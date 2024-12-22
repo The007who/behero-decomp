@@ -112,15 +112,6 @@ footer section div li a {
     color: white;
 }
 
-.cards-list div img {
-    width: 20%;
-}
-
-.cards-list div div {
-    display: flex;
-    justify-content: space-evenly;
-}
-
 @media (max-width: 1000px) {
 
     body {

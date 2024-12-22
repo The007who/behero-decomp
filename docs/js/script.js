@@ -26,7 +26,7 @@ function startUp() {
                 + date.substring(0, 4);
 
             msgLength += new_date.length + message.length + 2;
-            if (msgLength < 230) {
+            if (msgLength < 200) {
                 return `<li><a href="${link}">${new_date}: ${message}</a></li>`;
             } else {
                 return '';

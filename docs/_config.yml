@@ -27,9 +27,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: https://the007who.github.io # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
 github_username:  The007who
+permalink: pretty
 
 # Build settings
-theme: minima
 plugins:
   - jekyll-feed
   - jekyll-datapage-generator
@@ -64,10 +64,10 @@ seo:
   image: /resources/layout/logo.png
 
 # Page gen
-page_gen-dirs: false
+page_gen-dirs: true
 
 page_gen:
-- data: 'card_pages'
+- data: 'cardpages'
   template: 'card_collection'
-  name_expr: record['name_eng']
-  dir: 'card'
+  name: name_eng
+  dir: 'collection'

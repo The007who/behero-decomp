@@ -6,14 +6,14 @@
     <meta name="keywords" content="behero, be hero, combatti, giochipreziosi, gioco, giochi, digitalpreziosi">
 
     <title>{{ page.title }} » BeHero Wiki</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="resources/layout/icon.ico">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="{{ 'css/style.css' | relative_url }}">
+    <link rel="shortcut icon" href="{{ 'resources/layout/icon.ico' | relative_url }}">
+    <script src="{{ 'js/script.js' | relative_url }}"></script>
     {% seo %}
 </head>
 <body onload="startUp();">
 
-    <img src="resources/layout/header.jpg" alt="header" draggable="false" style="margin-bottom: 3px;">
+    <img src="{{ 'resources/layout/header.jpg' | relative_url }}" alt="header" draggable="false" style="margin-bottom: 3px;">
 
     <iframe class="ghbutton" src="https://ghbtns.com/github-btn.html?user=The007who&repo=behero-decomp&type=star&count=true&size=large" 
     frameborder="0" scrolling="0" width="170" height="30" title="GitHub">
@@ -21,12 +21,12 @@
 
     <nav>
 
-        <div><a href="index"><img src="resources/layout/home.png" alt="homebtn"></a></div>
-        <div><a href="game"><img src="resources/layout/game.png" alt="gamebtn"></a></div>
-        <div><a href="world"><img src="resources/layout/world.png" alt="worldbtn"></a></div>
-        <div><a href="cards"><img src="resources/layout/cards.png" alt="cardsbtn"></a></div>
-        <div><a href="media"><img src="resources/layout/media.png" alt="mediabtn"></a></div>
-        <div><a href="hardware"><img src="resources/layout/hardware.png" alt="hardwarebtn"></a></div>
+        <div><a href="{% link index.html %}"><img src="{{ 'resources/layout/home.png' | relative_url }}" alt="homebtn"></a></div>
+        <div><a href=""><img src="{{ 'resources/layout/game.png' | relative_url }}" alt="gamebtn"></a></div>
+        <div><a href="{% link pages/world.html %}"><img src="{{ 'resources/layout/world.png' | relative_url }}" alt="worldbtn"></a></div>
+        <div><a href="{% link pages/cards.html %}"><img src="{{ 'resources/layout/cards.png' | relative_url }}" alt="cardsbtn"></a></div>
+        <div><a href="{% link pages/media.html %}"><img src="{{ 'resources/layout/media.png' | relative_url }}" alt="mediabtn"></a></div>
+        <div><a href="{% link pages/hardware.html %}"><img src="{{ 'resources/layout/hardware.png' | relative_url }}" alt="hardwarebtn"></a></div>
 
     </nav>
 
@@ -47,13 +47,13 @@
 
     <footer>
         <section>
-            <img src="resources/layout/box_news.jpg" alt="news_box" draggable="false">
+            <img src="{{ 'resources/layout/box_news.jpg' | relative_url }}" alt="news_box" draggable="false">
             <div id="commit-history"></div>
         </section>
 
         <section>
             <a href="hardware">
-                <img src="resources/layout/box_console.jpg" alt="box_console" draggable="false">
+                <img src="{{ 'resources/layout/box_console.jpg' | relative_url }}" alt="box_console" draggable="false">
             </a>
         </section>
     </footer>
