@@ -23,10 +23,10 @@ email: awsomeg75@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the BeHero Wiki. The BeHero is a italian toy released in 2010
   by Giochi Preziosi.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: https://the007who.github.io/behero-decomp # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /behero-decomp # the subpath of your site, e.g. /blog
+url: https://the007who.github.io # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
-github_username:  The007who
+github_username: The007who
 permalink: pretty
 
 # Build settings
