@@ -12,14 +12,23 @@ if len(lines) > 1:
         lines[index] = lines[index][:-1]
 
 # iterate through each char
+output_hex = bytearray()
 buffer = ""
 for line in lines:
     for char in line:
         if char.lower() in legal_chars:
-            buffer += char.lower()
+            if len(buffer) == 0:
+                buffer += char.lower()
+            elif len(buffer) == 1:
+                buffer += char.lower()
+                output_hex.append(int(buffer, 16))
+                buffer = ""
 
-output_hex = bytearray()
-output_hex.extend(map(ord, buffer))
+if len(buffer) != 0:
+    buffer += "0"
+    output_hex.append(int(buffer, 16))
+    print("Hex amount is odd, last hex has been filled with 0")
+
 
 with open("output.bin", "wb") as output:
     output.write(output_hex)
