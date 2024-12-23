@@ -26,15 +26,19 @@ title: Cards
         Total cards: <span style="font-weight: bold;">24/216 (11.11%</span>)
     </p>
 
-    <h1>Cards List</h1>
     {% assign ages = "Lost-Golden-Enchanted-Frozen-New-Nightmare" | split: '-' %}
     {% for age in ages %}
-        <p>{{ age }}</p>
+        <h1 style="display: flex; align-items: center;">
+            <div>{{ age }}</div>
+            <img src="{{ 'resources/ageicons/' | append: age | downcase | replace: ' ', '-' | append: 'age-icon.png' | relative_url }}" 
+            style="width: 5%; margin: 2%;"
+            alt="ageicon">
+        </h1>
         {% for collection_list in site.data.cardpages %}
             {% if collection_list.age == age %}
                 <a href="{{ collection_list.name_eng | datapage_url: 'collection' | relative_url }}">
-                    <h1 class="ita-text">{{ collection_list.name_ita }}</h1>
-                    <h1 class="eng-text" style="display: none;">{{ collection_list.name_eng }}</h1>
+                    <p class="ita-text">{{ collection_list.name_ita }}</p>
+                    <p class="eng-text" style="display: none;">{{ collection_list.name_eng }}</p>
                 </a>
             {% endif %}
         {% endfor %}

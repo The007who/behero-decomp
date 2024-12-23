@@ -16,8 +16,13 @@ body {
 .ghbutton {
     position: absolute;
     top: 60px;
-    margin-left: -170px; 
+    margin-left: 830px; 
 }
+
+.ghbutton span {
+    display: flex;
+}
+
 
 .langSwitch {
     position: absolute;
@@ -65,7 +70,6 @@ nav {
 
 article {
     width: 830px;
-    margin-bottom: 50px;
 }
 
 aside {
@@ -74,6 +78,7 @@ aside {
 
 footer {
     display: flex;
+    margin-top: 50px;
 }
 
 footer section {
