@@ -21,17 +21,23 @@ title: {{ page.name_eng }}
     <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end;">
         {% for card in page.cards %}
             <div style="width: 30%;">
-                <img 
-                src="{{ 'resources/cards/' 
-                        | append: page.name_eng
-                        | append: '/'
-                        | append: card.name_eng
-                        | downcase 
-                        | replace: ' ', '-'
-                        | append: '.jpg'
-                        | relative_url }}" 
-                alt="card"
-                style="width: 100%;">
+                {% if card.confirmed == true %}
+                    <img 
+                    src="{{ 'resources/cards/' 
+                            | append: page.name_eng
+                            | append: '/'
+                            | append: card.name_eng
+                            | downcase 
+                            | replace: ' ', '-'
+                            | append: '.jpg'
+                            | relative_url }}" 
+                    alt="card"
+                    style="width: 100%;">
+                {% else %}
+                    <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" 
+                    alt="not-confirmed-card"
+                    style="width: 100%; filter: grayscale(100%);">
+                {% endif %}
                 <p class="ita-text">{{ card.name_ita }}</p>
                 <p class="eng-text" style="display: none;">{{ card.name_eng }}</p>
                 <p>Attack: {{ card.attack[0] }}|{{ card.attack[1] }}</p>

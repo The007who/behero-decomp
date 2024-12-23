@@ -21,9 +21,19 @@ title: Cards
         36 collections. Each collection has 6 cards, therefore there are possibly 216 cards. 
         There are 24 confirmed cards(confirmed meaning a high res scan of the card).
     </p>
-    
+
+
     <p>
-        Total cards: <span style="font-weight: bold;">24/216 (11.11%</span>)
+        {% assign count = 0 %}
+        {% for collection in site.data.cardpages %}
+            {% for card in collection.cards %}
+                {% if card.confirmed == true %}
+                    {% assign count = count | plus: 1 %}
+                {% endif %}
+            {% endfor %}
+        {% endfor %}
+        Total cards: <span style="font-weight: bold;">{{ count }}/216 
+            ({{ count| times: 100 | divided_by: 216 }}%</span>)
     </p>
 
     {% assign ages = "Lost-Golden-Enchanted-Frozen-New-Nightmare" | split: '-' %}

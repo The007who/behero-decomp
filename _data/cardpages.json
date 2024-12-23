@@ -12,6 +12,7 @@
                 "name_eng": "Shoes of the Apocalypse",
                 "name_ita": "Calzature dell'Apocalisse",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 4],
                 "defense": [3, 3],
                 "speed": [1, 2]
@@ -31,6 +32,7 @@
                 "name_eng": "Vest of Buried Hope",
                 "name_ita": "Veste della Speranza Sepolta",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 2],
                 "defense": [5, 7],
                 "speed": [2, 3]
@@ -50,6 +52,7 @@
                 "name_eng": "Protector of Darkness",
                 "name_ita": "Protezione dell'Oscurità",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 1],
                 "defense": [3, 4],
                 "speed": [1, 2]
@@ -69,6 +72,7 @@
                 "name_eng": "Defense of Destruction",
                 "name_ita": "Difesa della Distruzione",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [0, 0],
                 "defense": [3, 4],
                 "speed": [2, 3]
@@ -77,6 +81,7 @@
                 "name_eng": "Bludgeon of Destruction",
                 "name_ita": "Dispositivo della Distruzione",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 3],
                 "defense": [2, 2],
                 "speed": [1, 2]
@@ -96,6 +101,7 @@
                 "name_eng": "Breastplate of the Elven Circle",
                 "name_ita": "Bardatura del Cerchio Elfico",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 1],
                 "defense": [4, 6],
                 "speed": [0, 0]
@@ -104,8 +110,29 @@
                 "name_eng": "Spirit of the Elven Circle",
                 "name_ita": "Spirito del Cerchio Elfico",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [6, 8],
                 "defense": [2, 3],
+                "speed": [0, 1]
+            }
+        ]
+    },
+    {
+        "name_eng": "Entrapment",
+        "name_ita": "Trappola",
+        "age": "New",
+        "guild_eng": "Magician",
+        "guild_ita": "Mago",
+        "desc_eng": "Carry with you more than one Entrapment piece to access self-healing.",
+        "desc_ita": "Indossa piu di un pezzo della Trappola per poterti curare da solo.",
+        "cards": [
+            {
+                "name_eng": "Crown of Entrapment",
+                "name_ita": "Corona della Trappola",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 2],
+                "defense": [4, 4],
                 "speed": [0, 1]
             }
         ]
@@ -123,6 +150,7 @@
                 "name_eng": "Crown of Fortune",
                 "name_ita": "Corona della Fortuna",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 3],
                 "defense": [3, 4],
                 "speed": [1, 2]
@@ -131,9 +159,50 @@
                 "name_eng": "Cloak of Fortune",
                 "name_ita": "Mantello della Fortuna",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 3],
                 "defense": [6, 8],
                 "speed": [0, 1]
+            }
+        ]
+    },
+    {
+        "name_eng": "Good Intentions",
+        "name_ita": "Buone Intenzioni",
+        "age": "Nightmare",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
+        "desc_eng": "When faced with multiple items of Good Intentions your enemy may lose his ability to attack you.",
+        "desc_ita": "Se (...) piu oggetti delle Buone Intenzioni, i nemici potrebbero perdere le possibilita di attaccarti.",
+        "cards": [
+            {
+                "name_eng": "Breastplate of Good Intensions",
+                "name_ita": "Bardatura delle Buone Intenzioni",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [3, 4],
+                "defense": [2, 3],
+                "speed": [0, 0]
+            }
+        ]
+    },
+    {
+        "name_eng": "Hidden Crescent",
+        "name_ita": "Luna Nascosta",
+        "age": "Golden",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
+        "desc_eng": "Force your foe to skip 1 turn with the special powers of the Hidden Crescent.",
+        "desc_ita": "Costringi il nemico a saltare un turno con il potere speciale della Luna Nascosta.",
+        "cards": [
+            {
+                "name_eng": "Spear of the Hidden Crescent",
+                "name_ita": "Lancia della Luna Nascosta",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [5, 6],
+                "defense": [0, 1],
+                "speed": [0, 0]
             }
         ]
     },
@@ -150,6 +219,7 @@
                 "name_eng": "Helm of Horns",
                 "name_ita": "Elmo di Corno",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 3],
                 "defense": [0, 0],
                 "speed": [3, 4]
@@ -169,6 +239,7 @@
                 "name_eng": "Targe of the Iron Hand",
                 "name_ita": "Copertura della Mano di Ferro",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 1],
                 "defense": [3, 5],
                 "speed": [2, 3]
@@ -188,6 +259,7 @@
                 "name_eng": "Moccasins of Nature",
                 "name_ita": "Sandali della Natura",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 4],
                 "defense": [4, 4],
                 "speed": [0, 1]
@@ -207,6 +279,7 @@
                 "name_eng": "Tunic of Oceana",
                 "name_ita": "Tunica di Oceana",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 1],
                 "defense": [3, 4],
                 "speed": [1, 2]
@@ -215,9 +288,30 @@
                 "name_eng": "Mace of Oceana",
                 "name_ita": "Mazza di Oceana",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [0, 1],
                 "defense": [2, 2],
                 "speed": [3, 4]
+            }
+        ]
+    },
+    {
+        "name_eng": "Odysseus",
+        "name_ita": "Odisseo",
+        "age": "Frozen",
+        "guild_eng": "Warrior",
+        "guild_ita": "Guerriero",
+        "desc_eng": "Inflict greater damage when equipped with multiple pieces of Odysseus' garb.",
+        "desc_ita": "Infliggi danni maggiori se sei equipaggiato (?) elementi degli abiti di Odisseo.",
+        "cards": [
+            {
+                "name_eng": "Helm of Odysseus",
+                "name_ita": "Elmo di Odisseo",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 1],
+                "defense": [2, 3],
+                "speed": [2, 3]
             }
         ]
     },
@@ -234,6 +328,7 @@
                 "name_eng": "Boots of Peril",
                 "name_ita": "Stivali del Pericolo",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [4, 6],
                 "defense": [1, 1],
                 "speed": [1, 2]
@@ -242,6 +337,7 @@
                 "name_eng": "Companion of Peril",
                 "name_ita": "Compagno del Pericolo",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [3, 4],
                 "defense": [1, 1],
                 "speed": [1, 2]
@@ -261,6 +357,7 @@
                 "name_eng": "Shades of the Sacrifice",
                 "name_ita": "Visore del Sacrificio",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 2],
                 "defense": [3, 4],
                 "speed": [2, 3]
@@ -280,6 +377,7 @@
                 "name_eng": "Beast of Sand",
                 "name_ita": "Bestia della Sabbia",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [2, 3],
                 "defense": [0, 0],
                 "speed": [3, 4]
@@ -299,6 +397,7 @@
                 "name_eng": "Guard of Shadows",
                 "name_ita": "Guardia delle Ombre",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [0, 0],
                 "defense": [4, 5],
                 "speed": [1, 2]
@@ -318,6 +417,7 @@
                 "name_eng": "Ally of the Shrieking Maiden",
                 "name_ita": "Alleato della Fanciulla Urlante",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 2],
                 "defense": [2, 2],
                 "speed": [2, 3]
@@ -337,6 +437,7 @@
                 "name_eng": "Treads of the Silver Revolution",
                 "name_ita": "Scarponi della Rivoluzione d'Argento",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [1, 2],
                 "defense": [0, 0],
                 "speed": [4, 5]
@@ -345,6 +446,7 @@
                 "name_eng": "Dagger of the Silver Revolution",
                 "name_ita": "Pugnale della Rivoluzione d'Argento",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [7, 9],
                 "defense": [0, 1],
                 "speed": [1, 2]
@@ -364,6 +466,7 @@
                 "name_eng": "Cudgel of Steel",
                 "name_ita": "Randello d'Acciaio",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [8, 10],
                 "defense": [0, 2],
                 "speed": [0, 0]
@@ -383,6 +486,7 @@
                 "name_eng": "Sallet of the Tortoise",
                 "name_ita": "Copricapo della Tartaruga",
                 "barcode": "Unknown",
+                "confirmed": true,
                 "attack": [5, 6],
                 "defense": [0, 0],
                 "speed": [0, 1]
