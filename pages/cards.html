@@ -3,6 +3,25 @@ layout: default
 title: Cards
 ---
 
+<style type="text/css" media="screen">
+    progress {
+        border-radius: 7px;
+        width: 100%;
+        height: 2em;
+        box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    }
+    progress::-webkit-progress-bar {
+        background-color: #d2a64d;
+        border-radius: 7px;
+    }
+    progress::-webkit-progress-value {
+        background-color: #81662f;
+        border-radius: 7px;
+        box-shadow: 1px 1px 5px 3px #000000;
+    }
+
+</style>
+
 <article>
 
     <h1>Cards page!</h1>
@@ -11,19 +30,21 @@ title: Cards
         Missing cards! Feel free to send missing cards to complete collection.
     </p>
 
-    <div></div>
     <p>Back of the card</p>
     <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" alt="backcard" width="33%">
 
 
     <p>
-        Collections seem to be made of a combination of the Age and the Guild. There are 6 Ages and 6 Guilds, meaning there are possibly
-        36 collections. Each collection has 6 cards, therefore there are possibly 216 cards. 
-        There are 24 confirmed cards(confirmed meaning a high res scan of the card).
+        On the official packaging it says there are more than 800 cards. <br>
+        There are 6 cards for each collection and each collection is a combination of 6 ages and 6 guilds.
+        Meaning that there are at least: 800 / 6 / 6 / 6 = 3.69 ≈ 4 collections(per age and guild). <br>
+        Therefore, there are at least 4 * 6 * 6 * 6 = 864 cards. <br>
+        A confirmed card means a high res scan of it. 
     </p>
 
 
     <p>
+        <!-- count how many cards -->
         {% assign count = 0 %}
         {% for collection in site.data.cardpages %}
             {% for card in collection.cards %}
@@ -32,8 +53,10 @@ title: Cards
                 {% endif %}
             {% endfor %}
         {% endfor %}
-        Total cards: <span style="font-weight: bold;">{{ count }}/216 
-            ({{ count| times: 100 | divided_by: 216 }}%</span>)
+        Total confirmed cards: <span style="font-weight: bold;">{{ count }}/864 
+            ({{ count | times: 100 | divided_by: 864 }}%</span>)
+
+        <progress value="{{ count }}" max="864"></progress>
     </p>
 
     {% assign ages = "Lost-Golden-Enchanted-Frozen-New-Nightmare" | split: '-' %}
