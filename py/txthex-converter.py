@@ -1,9 +1,13 @@
+import sys
+
 legal_chars = [
     "0", "1", "2", "3", "4", "5", "6", "7", "8", "9",
     "a", "b", "c", "d", "e", "f"
 ]
 
-with open("input.txt", "r") as input:
+file_name = sys.argv[1]
+
+with open(file_name, "r") as input:
     lines = input.readlines()
 
 # remove new line character
@@ -30,5 +34,5 @@ if len(buffer) != 0:
     print("Hex amount is odd, last hex has been filled with 0")
 
 
-with open("output.bin", "wb") as output:
+with open(file_name[:file_name.index(".")] + ".bin", "wb") as output:
     output.write(output_hex)
