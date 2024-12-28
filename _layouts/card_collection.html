@@ -38,8 +38,10 @@ title: {{ page.name_eng }}
                     alt="not-confirmed-card"
                     style="width: 100%; filter: grayscale(100%);">
                 {% endif %}
-                <p class="ita-text">{{ card.name_ita }}</p>
-                <p class="eng-text" style="display: none;">{{ card.name_eng }}</p>
+                <div style="font-weight: bold;">
+                    <p class="ita-text">{{ card.name_ita }}</p>
+                    <p class="eng-text" style="display: none;">{{ card.name_eng }}</p>
+                </div>
                 <p>Attack: {{ card.attack[0] }}|{{ card.attack[1] }}</p>
                 <p>Defense: {{ card.defense[0] }}|{{ card.defense[1] }}</p>
                 <p>Speed: {{ card.speed[0] }}|{{ card.speed[1] }}</p>
