@@ -11,7 +11,7 @@ For general info about the game, you can find it all on the [Wiki](https://the00
 - [ ] Obtain root filesystem.
 - [ ] Run the binaries in an emulated environment, maybe QEMU.
 - [ ] Decompile the game.
-Make ports for all major platforms:
+- Make ports for all major platforms:
     - [ ] Linux and Mac: Qt framework.
     - [ ] Windows: .NET 2.0 framework so that it can run all the way down to win9x thanks to [this](https://github.com/itsmattkc/dotnet9x) compatibility layer.
     - [ ] Android: Use the Android NDK to use C code.
