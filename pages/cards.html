@@ -30,8 +30,16 @@ title: Cards
         Missing cards! Feel free to send missing cards to complete collection.
     </p>
 
-    <p>Back of the card</p>
-    <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" alt="backcard" width="33%">
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-around; align-items: flex-end;">
+        <div style="align-items: center;">
+            <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" alt="backcard" width="33%">
+            <p style="width: min-width;">Back of the card</p>
+        </div>
+        <div style="align-items: center;">
+            <img src="{{ 'resources/cards/backcard.jpg' | relative_url }}" alt="backcard" width="33%">
+            <p style="width: min-width;">Back of the card</p>
+        </div>
+    </div>
 
 
     <hr>

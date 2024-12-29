@@ -69,15 +69,6 @@
         "desc_ita": "Se combinati insieme, gli oggetti della Distruzione assorbono vita dai tuoi nemici.",
         "cards": [
             {
-                "name_eng": "Defense of Destruction",
-                "name_ita": "Difesa della Distruzione",
-                "barcode": "Unknown",
-                "confirmed": true,
-                "attack": [0, 0],
-                "defense": [3, 4],
-                "speed": [2, 3]
-            },
-            {
                 "name_eng": "Bludgeon of Destruction",
                 "name_ita": "Dispositivo della Distruzione",
                 "barcode": "Unknown",
@@ -85,6 +76,15 @@
                 "attack": [2, 3],
                 "defense": [2, 2],
                 "speed": [1, 2]
+            },
+            {
+                "name_eng": "Defense of Destruction",
+                "name_ita": "Difesa della Distruzione",
+                "barcode": "Unknown",
+                "confirmed": true,
+                "attack": [0, 0],
+                "defense": [3, 4],
+                "speed": [2, 3]
             }
         ]
     },
@@ -98,15 +98,6 @@
         "desc_ita" : "Costringi il nemico a saltare un turno indossando più oggetti del Cerchio Elfico.",
         "cards": [
             {
-                "name_eng": "Breastplate of the Elven Circle",
-                "name_ita": "Bardatura del Cerchio Elfico",
-                "barcode": "Unknown",
-                "confirmed": true,
-                "attack": [1, 1],
-                "defense": [4, 6],
-                "speed": [0, 0]
-            },
-            {
                 "name_eng": "Spirit of the Elven Circle",
                 "name_ita": "Spirito del Cerchio Elfico",
                 "barcode": "Unknown",
@@ -114,6 +105,15 @@
                 "attack": [6, 8],
                 "defense": [2, 3],
                 "speed": [0, 1]
+            },
+            {
+                "name_eng": "Breastplate of the Elven Circle",
+                "name_ita": "Bardatura del Cerchio Elfico",
+                "barcode": "Unknown",
+                "confirmed": true,
+                "attack": [1, 1],
+                "defense": [4, 6],
+                "speed": [0, 0]
             }
         ]
     },
@@ -276,15 +276,6 @@
         "desc_ita": "Più oggetti di Oceana indossi, più potrai sferrare un attacco mortale.",
         "cards": [
             {
-                "name_eng": "Tunic of Oceana",
-                "name_ita": "Tunica di Oceana",
-                "barcode": "Unknown",
-                "confirmed": true,
-                "attack": [1, 1],
-                "defense": [3, 4],
-                "speed": [1, 2]
-            },
-            {
                 "name_eng": "Mace of Oceana",
                 "name_ita": "Mazza di Oceana",
                 "barcode": "Unknown",
@@ -292,6 +283,15 @@
                 "attack": [0, 1],
                 "defense": [2, 2],
                 "speed": [3, 4]
+            },
+            {
+                "name_eng": "Tunic of Oceana",
+                "name_ita": "Tunica di Oceana",
+                "barcode": "Unknown",
+                "confirmed": true,
+                "attack": [1, 1],
+                "defense": [3, 4],
+                "speed": [1, 2]
             }
         ]
     },
@@ -325,20 +325,20 @@
         "desc_ita": "Aumenta il danno che infliggi equipaggiando più parti dell'armatura del Pericolo.",
         "cards": [
             {
-                "name_eng": "Boots of Peril",
-                "name_ita": "Stivali del Pericolo",
-                "barcode": "Unknown",
-                "confirmed": true,
-                "attack": [4, 6],
-                "defense": [1, 1],
-                "speed": [1, 2]
-            },
-            {
                 "name_eng": "Companion of Peril",
                 "name_ita": "Compagno del Pericolo",
                 "barcode": "Unknown",
                 "confirmed": true,
                 "attack": [3, 4],
+                "defense": [1, 1],
+                "speed": [1, 2]
+            },
+            {
+                "name_eng": "Boots of Peril",
+                "name_ita": "Stivali del Pericolo",
+                "barcode": "Unknown",
+                "confirmed": true,
+                "attack": [4, 6],
                 "defense": [1, 1],
                 "speed": [1, 2]
             }
@@ -434,15 +434,6 @@
         "desc_ita": "Attacca due volte indossando vari oggetti della Rivoluzione d'Argento.",
         "cards": [
             {
-                "name_eng": "Treads of the Silver Revolution",
-                "name_ita": "Scarponi della Rivoluzione d'Argento",
-                "barcode": "Unknown",
-                "confirmed": true,
-                "attack": [1, 2],
-                "defense": [0, 0],
-                "speed": [4, 5]
-            },
-            {
                 "name_eng": "Dagger of the Silver Revolution",
                 "name_ita": "Pugnale della Rivoluzione d'Argento",
                 "barcode": "Unknown",
@@ -450,6 +441,15 @@
                 "attack": [7, 9],
                 "defense": [0, 1],
                 "speed": [1, 2]
+            },
+            {
+                "name_eng": "Treads of the Silver Revolution",
+                "name_ita": "Scarponi della Rivoluzione d'Argento",
+                "barcode": "Unknown",
+                "confirmed": true,
+                "attack": [1, 2],
+                "defense": [0, 0],
+                "speed": [4, 5]
             }
         ]
     },

@@ -79,12 +79,13 @@ aside {
 footer {
     display: flex;
     margin-top: 50px;
+    justify-content: space-between;
+    width: 830px;
 }
 
 footer section {
     position: relative;
     width: 270px;
-    margin-right: 10px;
     margin-bottom: 15px;
 }
 
