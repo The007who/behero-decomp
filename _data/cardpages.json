@@ -89,6 +89,35 @@
         ]
     },
     {
+        "name_eng": "Dragonrider",
+        "name_ita": "Cavalcadraghi",
+        "age": "Enchanted",
+        "guild_eng": "Knight",
+        "guild_ita": "Cavaliere",
+        "desc_eng": "When multiple Dragonrider items are worn, stunning the opponent becomes possible.",
+        "desc_ita": "Quando sono indossati vari oggetti del Cavalcadraghi, stordire il nemico diventa più facile.",
+        "cards": [
+            {
+                "name_eng": "Sabatons of the Dragonrider",
+                "name_ita": "Anfibi del Cavalcadraghi",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 1],
+                "defense": [4, 5],
+                "speed": [0, 1]
+            },
+            {
+                "name_eng": "Shield of the Dragonrider",
+                "name_ita": "Scudo del Cavalcadraghi",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [0, 0],
+                "defense": [4, 5],
+                "speed": [1, 1]
+            }
+        ]
+    },
+    {
         "name_eng": "Elven Circle",
         "name_ita": "Cerchio Elfico",
         "age": "Frozen",
@@ -134,6 +163,35 @@
                 "attack": [1, 2],
                 "defense": [4, 4],
                 "speed": [0, 1]
+            },
+            {
+                "name_eng": "Moccasins of Entrapment",
+                "name_ita": "Sandali della Trappola",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 2],
+                "defense": [2, 2],
+                "speed": [2, 3]
+            }
+        ]
+    },
+    {
+        "name_eng": "Forest",
+        "name_ita": "Foresta",
+        "age": "Lost",
+        "guild_eng": "Alchemist",
+        "guild_ita": "Alchimista",
+        "desc_eng": "Leech life from adversaries when using multiple items from the Dark Forest.",
+        "desc_ita": "Assorbi energia dagli avversari usando più oggetti della Foresta Oscura.",
+        "cards": [
+            {
+                "name_eng": "Defense of the Forest",
+                "name_ita": "Difesa della Foresta",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [0, 1],
+                "defense": [4, 5],
+                "speed": [1, 1]
             }
         ]
     },
@@ -263,6 +321,15 @@
                 "attack": [2, 4],
                 "defense": [4, 4],
                 "speed": [0, 1]
+            },
+            {
+                "name_eng": "Protector of Nature",
+                "name_ita": "Protezione della Natura",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 2],
+                "defense": [4, 5],
+                "speed": [0, 0]
             }
         ]
     },
@@ -450,6 +517,15 @@
                 "attack": [1, 2],
                 "defense": [0, 0],
                 "speed": [4, 5]
+            },
+            {
+                "name_eng": "Mask of the Silver Revolution",
+                "name_ita": "Maschera della Rivoluzione d'Argento",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 2],
+                "defense": [2, 2],
+                "speed": [2, 3]
             }
         ]
     },
@@ -470,6 +546,35 @@
                 "attack": [8, 10],
                 "defense": [0, 2],
                 "speed": [0, 0]
+            },
+            {
+                "name_eng": "Sabatons of Steel",
+                "name_ita": "Anfibi d'Acciaio",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [2, 3],
+                "defense": [1, 1],
+                "speed": [2, 3]
+            }
+        ]
+    },
+    {
+        "name_eng": "Stormrider",
+        "name_ita": "Cavalcatempeste",
+        "age": "Enchanted",
+        "guild_eng": "Adventurer",
+        "guild_ita": "Avventuriero",
+        "desc_eng": "Gather the Stormrider's items to activate the chance of a rare and deadly attack.",
+        "desc_ita": "Raduna gli oggetti del Cavalcatempeste per sferrare un raro e micidiale attacco.",
+        "cards": [
+            {
+                "name_eng": "Targe of the Stormrider",
+                "name_ita": "Copertura del Cavalcatempeste",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [0, 0],
+                "defense": [2, 3],
+                "speed": [3, 4]
             }
         ]
     },
@@ -490,6 +595,35 @@
                 "attack": [5, 6],
                 "defense": [0, 0],
                 "speed": [0, 1]
+            },
+            {
+                "name_eng": "Shield of the Tortoise",
+                "name_ita": "Scudo della Tartaruga",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [2, 3],
+                "defense": [3, 4],
+                "speed": [0, 0]
+            }
+        ]
+    },
+    {
+        "name_eng": "Trickster",
+        "name_ita": "Imbroglione",
+        "age": "Enchanted",
+        "guild_eng": "Ninja",
+        "guild_ita": "Ninja",
+        "desc_eng": "The Trickster's tools, when used together, can often slip in a second attack!",
+        "desc_ita": "Gli oggetti dell'Imbroglione, se usati insieme, danno l'opportunità di sferrare un secondo attacco!",
+        "cards": [
+            {
+                "name_eng": "Treads of the Trickster",
+                "name_ita": "Scarponi dell'Imbroglione",
+                "barcode": "Unknown",
+                "confirmed": false,
+                "attack": [1, 1],
+                "defense": [3, 3],
+                "speed": [2, 3]
             }
         ]
     }
