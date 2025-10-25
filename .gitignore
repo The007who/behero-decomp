@@ -1,4 +1,4 @@
-# Wiki branch
-Gemfile.lock
 _site/
-firm.bin
+firm-analysis/dumps/
+firm-analysis/firm.bin
+firm-analysis/merge.csv
