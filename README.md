@@ -7,9 +7,9 @@ This is an effort in extracting the game data from it and hopefully reverse engi
 All info about the inner workings of the console can be found in `docs/hardware-documentation.odt`.
 For general info about the game, you can find it all on the [Wiki](https://the007who.github.io/behero-decomp/).
 # Roadmap
-- [ ] Backup all software on the console(the rated lifetime of the EEPROM is near the end!)
-- [ ] Obtain root filesystem.
-- [ ] Run the binaries in an emulated environment, maybe QEMU.
+- [x] Backup all software on the console
+- ~~[ ] Obtain root filesystem.~~ No file system.
+- [ ] Run the binaries in an emulated environment, ~~maybe QEMU~~(not supported).
 - [ ] Decompile the game.
 - Make ports for all major platforms:
     - [ ] Linux and Mac: Qt framework.

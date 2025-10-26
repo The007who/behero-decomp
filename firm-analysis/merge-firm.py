@@ -27,6 +27,6 @@ with open(join(script_dir, 'firm.bin'), 'wb') as output_file:
             output_file.write(highest_key)
             csv_file.write(str(highest_value) + '\n')
 
-            print(pos / 0x4000000 * 100)
+            print(str(int(pos / 0x4000000 * 100)) + "%")
 
 
