@@ -1,6 +1,27 @@
+0x00293000 - 0x002abbff HERO SPRITES
+
+0x002bf480 - 0x002c2edf icon sprites
+
+0x002c3c20 - 0x002d73ff saving animation
+0x002d8420 - 0x002ec3ff saving animation 2
+
+0x002ed540 - 0x002f23ff unknown sprite
+
+0x00327800 - 0x0032e01f battle animations(?)
+
+0x0032f400 - 0x0033208f window sprite(?)
+
+0x00332c20 - 0x003343ff medal sprites
+
+0x00335400 - 0x00348a6f messages
+
 0x02D85B7C - 0x02E692D1 MASSIVE GAME TEXT
 
 0x03115000 - 0x03119FFF ALPHABET SPRITES
 0x0311B000 - 0x0311FFF0 ALPHABET SPRITES 2
 
 0x03B9D800 - END OF FILE
+
+notes:
+
+investigate "SPF2ALP" might have to do with audio
