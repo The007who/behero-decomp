@@ -1,3 +1,8 @@
 firm-analysis/dumps/
+
+firm-analysis/sprites/*
+!firm-analysis/sprites/extract-sprite.py
+
 firm-analysis/firm.bin
+
 firm-analysis/merge.csv
