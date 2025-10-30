@@ -1,19 +1,34 @@
 0x00293000 - 0x002abbff HERO SPRITES
 
-0x002bf480 - 0x002c2edf icon sprites
+-- SPRITES SECTION 0x002bf480
 
-0x002c3c20 - 0x002d73ff saving animation
-0x002d8420 - 0x002ec3ff saving animation 2
+    0x002bf480 - 0x002c2edf icon sprites
 
-0x002ed540 - 0x002f23ff unknown sprite
+    0x002c3c20 - 0x002d73ff saving animation
+    0x002d8420 - 0x002ec3ff saving animation 2
 
-0x00327800 - 0x0032e01f battle animations(?)
+    0x002ed540 - 0x002f23ff unknown sprite
 
-0x0032f400 - 0x0033208f window sprite(?)
+    0x00327800 - 0x0032e01f battle animations(?)
 
-0x00332c20 - 0x003343ff medal sprites
+    0x0032f400 - 0x0033208f window sprite(?)
 
-0x00335400 - 0x00348a6f messages
+    0x00332c20 - 0x003343ff medal sprites
+
+    0x00335400 - 0x00348a6f message sprites
+
+    0x0034a400 - 0x0034e0bf more dialogue box sprite
+
+    0x0034cd20 - 0x0034f0bf same medals(?)
+
+    0x00350440 - 0x00354bff same message sprites
+
+    0x00362530 - 0x003b436f unknown sprites
+
+    0x004a0cff - 0x0080e55f armor sprites
+
+-- END SPRITE SECTION
+
 
 0x02D85B7C - 0x02E692D1 MASSIVE GAME TEXT
 
