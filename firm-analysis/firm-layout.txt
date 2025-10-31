@@ -1,6 +1,8 @@
-0x00293000 - 0x002abbff HERO SPRITES
 
--- SPRITES SECTION 0x002bf480
+
+-- SPRITES SECTION 0x00293000
+
+    0x00293000 - 0x002abbff HERO SPRITES
 
     0x002bf480 - 0x002c2edf icon sprites
 
@@ -28,6 +30,8 @@
     0x004a0cff - 0x0080e55f armor sprites
 
 -- END SPRITE SECTION
+
+0x025f90c0 - found tiles
 
 
 0x02D85B7C - 0x02E692D1 MASSIVE GAME TEXT
