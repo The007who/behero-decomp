@@ -1,7 +1,6 @@
 firm-analysis/dumps/
 
-firm-analysis/sprites/*
-!firm-analysis/sprites/extract-sprite.py
+firm-analysis/sprites/png/
 
 firm-analysis/audio/bin
 
