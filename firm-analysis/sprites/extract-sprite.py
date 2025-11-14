@@ -1,3 +1,6 @@
+#   -w | set image width default 32
+#   -c | set color address (0x0)
+
 import sys
 import math
 from PIL import Image
@@ -7,43 +10,58 @@ script_dir = dirname(__file__)
 firm_dir = join(script_dir, "..", "firm.bin")
 
 
-start_address = sys.argv[1]
-end_address = sys.argv[2]
-
-
-if len(sys.argv) >= 4:
-    image_width = int(sys.argv[3])
-else:
-    image_width = 32
-
-
-if len(sys.argv) >= 5:
-    colors 
-else:
-    colors = [
-        (127, 127, 127),
-        (0, 16, 132),
-        (24, 133, 173),
-        (66, 0, 123),
-        (99, 0, 90),
-        (107, 0, 16),
-        (96, 0, 0),
-        (79, 53, 0),
-        (49, 78, 24),
-        (0, 90, 33),
-        (33, 90, 16),
-        (8, 52, 66),
-        (0, 57, 115),
-        (112, 196, 197),
-        (0, 74, 67),
-        (0, 0, 0)
+image_width = 32
+colors = [
+        (0, 0, 0, 0),
+        (0, 16, 132, 255),
+        (24, 133, 173, 255),
+        (66, 0, 123, 255),
+        (99, 0, 90, 255),
+        (107, 0, 16, 255),
+        (96, 0, 0, 255),
+        (79, 53, 0, 255),
+        (49, 78, 24, 255),
+        (0, 90, 33, 255),
+        (33, 90, 16, 255),
+        (8, 52, 66, 255),
+        (0, 57, 115, 255),
+        (112, 196, 197, 255),
+        (0, 74, 67, 255),
+        (0, 0, 0, 255)
     ]
+
+
+x = 1
+while x < len(sys.argv):
+    if x == 1:
+        start_address = sys.argv[1]
+    elif x == 2:
+        end_address = sys.argv[2]
+
+    else:
+        if sys.argv[x] == "-w":
+            x += 1
+            image_width = int(sys.argv[x])
+
+        elif sys.argv[x] == "-c":
+            x += 1
+            print(sys.argv[x])
+
+        else:
+            sys.exit("Unknown option")
+
+    x += 1
+
+
+
+#--------------------
+
 
 
 amount_of_bytes = int(end_address, 16) - int(start_address, 16)
 rows = math.ceil(amount_of_bytes / image_width)
 
-image = Image.new("RGB", (image_width, rows), (127, 127, 127))
+image = Image.new("RGBA", (image_width, rows), (0, 0, 0, 0))
 
 with open(firm_dir, "rb") as file_in:
     file_in.seek(int(start_address, 16), 0)
