@@ -6,6 +6,11 @@ import math
 from PIL import Image
 from os.path import isfile, dirname, join
 
+def get_colors(address):
+    colors = []
+    
+    return colors
+
 script_dir = dirname(__file__)
 firm_dir = join(script_dir, "..", "firm.bin")
 
@@ -45,7 +50,7 @@ while x < len(sys.argv):
 
         elif sys.argv[x] == "-c":
             x += 1
-            print(sys.argv[x])
+            colors = get_colors(int(sys.argv[x], 16))
 
         else:
             sys.exit("Unknown option")
