@@ -7,5 +7,6 @@ firm-analysis/audio/bin
 firm-analysis/spf2alp/bin
 
 firm-analysis/firm.bin
+firm-analysis/firm-oob.bin
 
 firm-analysis/merge.csv
