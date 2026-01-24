@@ -1,10 +1,44 @@
-#   -w | set image width default 32
+#   -w | set image width, default 32
 #   -c | set color address (0x0)
 
 import sys
 import math
 from PIL import Image
 from os.path import isfile, dirname, join
+
+def convert_to_eight_bit(number, size):
+    if size == 5:
+        high = number * 8
+        low = number // 4
+        return high | low
+    
+    elif size == 6:
+        high = number * 4
+        low = number // 4
+        return high | low
+
+
+def bytes_to_pallete(bytes_in, transparency=False):
+    if isinstance(bytes_in, bytes):
+        bytes_in = int.from_bytes(bytes_in, byteorder='big')
+    elif isinstance(bytes_in, str):
+        bytes_in = int(bytes_in, 16)
+
+    blue = bytes_in % 32
+    blue = convert_to_eight_bit(blue, 5)
+
+    green = bytes_in // 32
+    green = convert_to_eight_bit(green % 64, 6)
+
+    red = bytes_in // 2048
+    red = convert_to_eight_bit(red, 5)
+
+    if transparency == False:
+        return (red, green, blue, 255)
+    else:
+        return (red, green, blue, 0)
+    
+
 
 def get_colors(address):
     colors = []
@@ -17,8 +51,8 @@ firm_dir = join(script_dir, "..", "firm.bin")
 
 image_width = 32
 colors = [
-        (0, 0, 0, 0),
-        (0, 16, 132, 255),
+        bytes_to_pallete('0x0000', True), # transparent
+        bytes_to_pallete('0x0075'), #(0, 16, 132, 255),
         (24, 133, 173, 255),
         (66, 0, 123, 255),
         (99, 0, 90, 255),
@@ -32,7 +66,7 @@ colors = [
         (0, 57, 115, 255),
         (112, 196, 197, 255),
         (0, 74, 67, 255),
-        (0, 0, 0, 255)
+        bytes_to_pallete('0xffff') #(0, 0, 0, 255)
     ]
 
 
