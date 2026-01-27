@@ -10,7 +10,7 @@
 	; set the stack pointer
 	sp = $2fe0		; (9108 2fe0)
 
-	;
+	; likely sets the cpu speed
 	r1 = $8418		; (9309 8418)
 	[$7807] = r1	; (d319 7807)
 
@@ -75,14 +75,14 @@
 	r1 = $5011		; (9309 5011)
 	[$783a] = r1	; (d319 783a)
 
-	;
+	; maybe lcd setup
 	r1 = $2492		; (9309 2492)
 	[$7874] = r1	; (d319 7874)
 	[$787c] = r1	; (d319 787c)
 	[$7888] = r1	; (d319 7888)
 	[$787e] = r1	; (d319 787e)
 
-	;
+	; maybe test mode, $7860 might be a hidden input port 
 	r1 = [$7860]	; (9311 7860)
 	test r1, $0080	; (c309 0080)
 	je exit			; (5e04)
