@@ -124,3 +124,18 @@
 	nop				; (f165)
 	nop				; (f165)
 	reti			; (9a98)
+
+	; vector table
+	goto $048c		; (fe80 8c04)
+	goto $048e		; (fe80 8e04)
+	goto $0420		; (fe80 2004)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+	goto $0bed		; (fe80 ed0b)
+
+	
