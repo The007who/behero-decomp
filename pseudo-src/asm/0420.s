@@ -1,5 +1,3 @@
-
-
 ; 0x000420
 	; main initialization
 
@@ -10,22 +8,22 @@
 	; set the stack pointer
 	sp = $2fe0		; (9108 2fe0)
 
-	; likely sets the cpu speed
+	; sets the clok control register
 	r1 = $8418		; (9309 8418)
 	[$7807] = r1	; (d319 7807)
 
-	;
+	; pll change
 	r1 = $20		; (9260)
 	[$7817] = r1	; (d319 7817)
 
-	;
+	; power state register
 	loop:
 	r1 = [$780f]	; (9311 780f)
 	r1 &= $0f		; (b24f)
 	cmp r1, $02		; (4242)
 	jne loop		; (4e45)
 
-	;
+	; set cache control register
 	r1 = $02		; (9242)
 	[$7819] = r1 	; (d319 7819)
 
@@ -33,49 +31,49 @@
 	nop				; (f165)
 	nop				; (f165)
 
-	;
+	; check cache control register
 	loop:
 	r1 = [$7819]	; (9311 7819)
 	test r1, $02	; (c242)
 	jne loop		; (4e44)
 
-	;
+	; cache control configuration(?)
 	r1 = $1d		; (925d)
 	[$7819] = r1	; (d319 7819)
 
-	;
+	; watchdog set
 	r1 = $00		; (9240)
 	[$780a] = r1	; (d319 780a)
 
-	;
+	; ???
 	r1 = $00		; (9240)
 	[$7808] = r1	; (d319 7808)
 
-	;
+	; sdram enable(?)
 	r1 = $02		; (9242)
 	[$782f] = r1	; (d319 782f)
 
-	;
+	; SDRAM_CBRCYC
 	r1 = $05da		; (9309 05da)
 	[$783d] = r1	; (d319 783d)
 
-	;
+	; sdram timing
 	r1 = $0f58		; (9309 0f58)
 	[$783c] = r1	; (d319 783c)
 
-	;
+	; sdram control 1
 	r1 = $2400		; (9309 2400)
 	[$783b] = r1	; (d319 783b)
 
-	;
+	; sdarm misc
 	r1 = $02		; (9242)
 	[$783e] = r1	; (d319 783e)
 
-	;
+	; sdram control 0
 	r1 = $5011		; (9309 5011)
 	[$783a] = r1	; (d319 783a)
 
-	; lcd setup
+	; external memory bus drive-strength registers
 	r1 = $2492		; (9309 2492)
 	[$7874] = r1	; (d319 7874)
 	[$787c] = r1	; (d319 787c)
@@ -83,16 +81,16 @@
 	[$787e] = r1	; (d319 787e)
 
 	; maybe test mode, $7860 might be a hidden port
-	r1 = [$7860]	; (9311 7860)
+	r1 = [$7860]	; (9311 7860) ioa_data_r
 	test r1, $0080	; (c309 0080)
 	je exit			; (5e04)
-	call $0029c4	; (f040 29c4)
+	call $0029c4	; (f040 29c4) (possibly removed from release)
 	nop				; (f165)
 	infinite:
 	jmp infinite	; (ee41)
 	exit:
-	
-	;
+
+	; parameters for 09bc
 	sp -= $04		; (2044)
 	r2 = sp + $0001	; (0508 0001)
 	r1 = $00		; (9240)
@@ -137,5 +135,3 @@
 	goto $0bed		; (fe80 ed0b)
 	goto $0bed		; (fe80 ed0b)
 	goto $0bed		; (fe80 ed0b)
-
-	
