@@ -45,11 +45,11 @@
 	r1 = $00		; (9240)
 	[$780a] = r1	; (d319 780a)
 
-	; ???
+	; lvr control
 	r1 = $00		; (9240)
 	[$7808] = r1	; (d319 7808)
 
-	; sdram enable(?)
+	; sdram enable
 	r1 = $02		; (9242)
 	[$782f] = r1	; (d319 782f)
 
@@ -75,10 +75,10 @@
 
 	; external memory bus drive-strength registers
 	r1 = $2492		; (9309 2492)
-	[$7874] = r1	; (d319 7874)
-	[$787c] = r1	; (d319 787c)
-	[$7888] = r1	; (d319 7888)
-	[$787e] = r1	; (d319 787e)
+	[$7874] = r1	; (d319 7874) SDRAM_Drv
+	[$787c] = r1	; (d319 787c) IOD_Drv
+	[$7888] = r1	; (d319 7888) MEM_Drv
+	[$787e] = r1	; (d319 787e) CS_Drv / MCS_Drv
 
 	; maybe test mode, $7860 might be a hidden port
 	r1 = [$7860]	; (9311 7860) ioa_data_r
@@ -90,7 +90,8 @@
 	jmp infinite	; (ee41)
 	exit:
 
-	; parameters for 09bc
+	; save values to the stack
+	; [0, 3, 2000, 3]
 	sp -= $04		; (2044)
 	r2 = sp + $0001	; (0508 0001)
 	r1 = $00		; (9240)

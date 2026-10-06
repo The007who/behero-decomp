@@ -1,23 +1,22 @@
 ; 09bc
 
 push bp, bp to [sp] ; DA88
-sp -= 12            ; 2052
+sp -= 18            ; 2052
 bp = sp + 0001      ; 0B08 0001
 
-r4 = 0d             ; 984D
-[bp+00] = r4
-
-r4 = 1fff
+; sets bp:[0d, 1fff, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+r4 = $0d            ; 984D
+[bp+00] = r4		; D800
+r4 = $1fff
 [bp+01] = r4
-
 r4 = 01
 [bp+02] = r4
 
-loop:
+loop: // this whole loop is to zero out the rest of the stack
 r3 = [bp+02]
 r4 = [bp+00]
 cmp r3, r4
-jge exit
+jge exit     ; if r3 >= r4 jump to exit
 
 r4 = [bp+02]
 r3 = r4 asr 4
@@ -28,15 +27,15 @@ r3 = r3 asr 4
 r1 = bp + 0003
 r2 = 00
 r4 += r1
-r3 += r2, carry
+r3 += r2, carry ; will always be 0?
 ds = r3
 
 r3 = 0
 ds:[r4] = r3
 
-r4 = [bp+02]
-r4 += 01
-[bp+02] = r4
+r4 = [bp+02] ;
+r4 += 01     ; increment
+[bp+02] = r4 ;
 
 jmp loop
 exit:
