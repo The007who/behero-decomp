@@ -109,7 +109,8 @@
 	r1 = $048c		; (9309 048c)
 	r2 = $2fea		; (950a 2fea)
 	r3 = $0016		; (970b 0016)
-	loop:
+
+	loop: ; seems to copy into memory a vector table
 	r4 = ds:[r1++]	; (98f1)
 	[r2++] = r4		; (d8d2)
 	r3 -= $01		; (2641)
@@ -117,22 +118,3 @@
 	call $000aeb	; (f040 0aeb)
 	infinite:
 	jmp infinite	; (4e44)
-
-	nop				; (f165)
-	nop				; (f165)
-	nop				; (f165)
-	nop				; (f165)
-	reti			; (9a98)
-
-	; vector table
-	goto $048c		; (fe80 8c04)
-	goto $048e		; (fe80 8e04)
-	goto $0420		; (fe80 2004)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
-	goto $0bed		; (fe80 ed0b)
