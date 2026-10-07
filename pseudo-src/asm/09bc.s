@@ -197,5 +197,53 @@ r4 = [bp+02]
 r4 += 01
 [bp+02] = r4
 goto big_back_jump
-
 big_forward_jump:
+
+r2 = [bp+00]
+r3 = [bp+00]
+r4 = r3 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+
+r3 += [bp+15]
+r4 += [bp+16], carry
+ds = r4
+r3 = ds:[r3]
+r4 = r3 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+
+r3 += [bp+17]
+r4 += [bp+18], carry
+ds = r4
+ds:[r3] = r2
+r4 = [bp+11]
+r4 = r4 asr 1
+[bp+11] = r4
+r4 = [bp+00]
+r4 += 01
+[bp+02] = r4
+r3 = [bp+02]
+r4 = [bp+01]
+cmp r3, r4
+jl skip
+goto big_forward_jump2
+
+skip:
+r3 = [bp+02]
+r4 = r3 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+r4 = r4 asr 4
+
+r3 += [bp+15]
+r4 += [bp+16], carry
+r3 += ffff
+r4 += ffff, carry
+ds = r4
+r3 = ds:[r3]
+r4 = [bp+11]
+cmp r3, r4
+jl big_forward_jump3
