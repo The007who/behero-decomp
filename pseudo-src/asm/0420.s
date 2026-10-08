@@ -91,7 +91,7 @@
 	exit:
 
 	; save values to the stack
-	; [0, 3, 2000, 3]
+	; [0, 3, 2000, 3] = [?, dest?, amount?, dest?]
 	sp -= $04		; (2044)
 	r2 = sp + $0001	; (0508 0001)
 	r1 = $00		; (9240)
