@@ -19,9 +19,10 @@
  00169A  r1 = [7a80] ; DMA_Ctrl0
  00169C  r1 |= 01
  00169D  [7a80] = r1 ; DMA_Ctrl0
+back:
  00169F  r1 = [7abf] ; DMA_INT
  0016A1  test r1, 01
- 0016A2  je 169f
+ 0016A2  je back
  0016A3  r1 = 01
  0016A4  [7abf] = r1 ; DMA_INT
  0016A6  retf
