@@ -1,19 +1,24 @@
 push bp, bp to [sp]
 bp = sp + 0001
 push r1, r4 to [sp]
+
 r1 = 007f
-[7850] = r1
+[7850] = r1 ; NF_Ctrl
 r1 = c200
-[7855] = r1
+[7855] = r1 ; NF_INT_Ctrl
 r3 = 0090
-[7851] = r3
+[7851] = r3 ; NF_CMD
+
 nop
 nop
+
 r1 = 00
-[7852] = r1
-[7853] = r1
-call 000bee
-r1 = [7854]
+[7852] = r1 ; NF_AddrL
+[7853] = r1 ; NF_AddrH
+
+call 000bee ; wait NAND ready
+
+r1 = [7854] ; NF_Data
 r1 = r1 & 00ff
 r2 = [7854]
 r2 = r2 lsl 4

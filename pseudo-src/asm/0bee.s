@@ -1,5 +1,7 @@
+; wait till NAND is ready
 push r1, r1 to [sp]
-r1 = [7850]
-jpl 0bef
+back:
+r1 = [7850] ; NF_Ctrl
+jpl back
 pop r1, r1 from [sp]
 retf
