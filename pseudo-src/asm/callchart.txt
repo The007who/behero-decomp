@@ -1,0 +1,16 @@
+goto 000420
+	> call 0009bc
+	> call 000aeb
+		> call 000de4
+		> call 000dee
+			> call 000bee wait NAND ready
+		> call 0012ff
+			> call 001241
+				> call 0004a2
+					> call 000bee
+		> call 001625
+			> call 001640
+				> call 000bee wait NAND ready
+				> call 000bee wait NAND ready
+				> call 00167b
+		> goto mr (120020)

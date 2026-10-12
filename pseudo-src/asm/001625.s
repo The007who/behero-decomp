@@ -1,6 +1,9 @@
 push bp, bp to [sp]
 bp = sp + 0001
 push r1, r4 to [sp]
+;    r4  [bp, ?, ?, ?, ?, x, ?, ?]
+; sp      bp       r1 r2     r3 r4
+
 r1 = [bp+03]
 r2 = [bp+04]
 r1 = r1 lsl 4
@@ -12,6 +15,7 @@ r4 = [bp+07]
 bp = [bp+05]
 
 loop:
+; parameters r1, r2, r3, r4
 call 001640
 r3 = r3 + 0100
 r4 += 00, carry

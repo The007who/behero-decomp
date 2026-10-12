@@ -3,6 +3,8 @@ sp -= 05
 bp = sp + 0001
 r4 = 00
 [bp+00] = r4
+; [0, ?, ?, ?, ?]
+; bp
 
 call 000de4
 call 000dee
