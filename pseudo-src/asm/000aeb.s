@@ -6,8 +6,8 @@ r4 = 00
 ; [0, ?, ?, ?, ?]
 ; bp
 
-call 000de4
-call 000dee
+call 000de4 ; P_BCH_Control = 0
+call 000dee ; NF_CMD = 00ff
 
 call 0012ff ; returns r1 value
 [bp+01] = r1

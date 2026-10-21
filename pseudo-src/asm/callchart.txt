@@ -1,8 +1,8 @@
 goto 000420
 	> call 0009bc
 	> call 000aeb
-		> call 000de4
-		> call 000dee
+		> call 000de4 ; P_BCH_Control = 0
+		> call 000dee ; NF_CMD = 00ff
 			> call 000bee wait NAND ready
 		> call 0012ff
 			> call 001241
@@ -62,3 +62,32 @@ goto 000420
 														> call 042c26
 															> call 042c05
 															> call 042c61
+								> call 04695f
+									> call 04c55c
+								> call 0880ff
+									> call 0424ad
+									> call 06d486
+										> call 06c69c
+										> call 06c67e
+									> call 06d50d
+									> call 0883b4
+										> call 06d5e6
+											> call 06d589
+									> call 04720a
+									> call 049c00
+										> call 044e72
+									> call 049d73
+								> call 042c8d
+									> call 089b06
+									> call 0843b2
+								> call 048407
+								> call 086a2e
+								> call 055840
+								> call 0477c6
+							> call 046bed
+							> call mr (089354)
+								> call 0893cf
+							> call 046bed
+							> call mr (042502)
+								> call 04260d
+									> call 046bed
