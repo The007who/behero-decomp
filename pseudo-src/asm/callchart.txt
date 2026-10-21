@@ -1,16 +1,93 @@
 goto 000420
 	> call 0009bc
 	> call 000aeb
-		> call 000de4
-		> call 000dee
+		> call 000de4 ; P_BCH_Control = 0
+		> call 000dee ; NF_CMD = 00ff
 			> call 000bee wait NAND ready
 		> call 0012ff
 			> call 001241
 				> call 0004a2
-					> call 000bee
+					> call 000bee wait NAND ready
 		> call 001625
 			> call 001640
 				> call 000bee wait NAND ready
 				> call 000bee wait NAND ready
 				> call 00167b
 		> goto mr (120020)
+			> call 126807
+				> call 12432a
+					> call 126056
+					> call 126060
+						> call 000f9a
+					> call 126566
+						> call 12647c
+							> call 12606d
+								> call 000f9a
+				> call 1248dd
+					> call 126785
+						> call 1267a0
+							> call 12677f
+							> call 1267db
+				> goto mr (40000)
+					> call 0019fc
+					> call 040fef
+						> call 052d99
+							> call 046bed
+							> call mr (0897f1)
+								> call 088f08
+									> call 089077
+								> call 066bd2
+									> call 04aae6
+										> call 083d8a
+										> call 083d94
+											> call 00211e
+										> call 0873f3
+											> call 047ba9
+												> call 047c95
+												> call 083da1
+													> call 00211e
+									> call 089750
+									> call 065a03
+										> call 04b099
+											> call 042c0b
+												> call 042c26
+													> call 042c05
+													> call 042c61
+									> call 066e01
+									> call 0668b2
+										> call 065a4d
+											> call 065a03
+												> call 04b099
+													> call 042c0b
+														> call 042c26
+															> call 042c05
+															> call 042c61
+								> call 04695f
+									> call 04c55c
+								> call 0880ff
+									> call 0424ad
+									> call 06d486
+										> call 06c69c
+										> call 06c67e
+									> call 06d50d
+									> call 0883b4
+										> call 06d5e6
+											> call 06d589
+									> call 04720a
+									> call 049c00
+										> call 044e72
+									> call 049d73
+								> call 042c8d
+									> call 089b06
+									> call 0843b2
+								> call 048407
+								> call 086a2e
+								> call 055840
+								> call 0477c6
+							> call 046bed
+							> call mr (089354)
+								> call 0893cf
+							> call 046bed
+							> call mr (042502)
+								> call 04260d
+									> call 046bed
