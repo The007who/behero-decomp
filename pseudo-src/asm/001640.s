@@ -15,7 +15,9 @@ skip:
 (Extended group 3) [7855] = r8 ; NF_INT_Ctrl
 [7852] = r1 ; NF_AddrL
 [7853] = r2 ; NF_AddrH
+
 call 000bee ; wait NAND ready
+
 r1 = 01
 [7857] = r1 ; ECC_Ctrl
 r1 = ce00
