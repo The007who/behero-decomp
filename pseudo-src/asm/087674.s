@@ -50,7 +50,7 @@
  0876A9  [r4] = r3                                           D6C4
  0876AA  call 08765a ; arbitrary wait
 
-; zero out bit 5 in IOD_Buffer
+; zero out bit 4 in IOD_Buffer
  0876AC  r3 = 7879                                           970B 7879
  0876AE  r4 = 00                                             9840
  0876AF  ds = r4                                             F02C
@@ -65,5 +65,6 @@
  0876B9  r4 = sp + 0001                                      0908 0001
  0876BB  [r4] = r3                                           D6C4
  0876BC  call 08765a ; arbitrary wait
+
  0876BE  sp += 01                                            0041
  0876BF  pop bp, pc from [sp]                                9898
