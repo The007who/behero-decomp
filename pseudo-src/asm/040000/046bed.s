@@ -1,7 +1,10 @@
 ;
 ; y1 = x3 * x5
 ; y2 = x3 * x6
-; 
+; y1.hi += y2.lo
+; y3 = x4 * x5
+; y1.hi += y3.lo
+
  046BED  push bp, bp to [sp]                                 DA88
  046BEE  bp = sp + 0001                                      0B08 0001
 ;     [x, x, x, ?, ?, ?, ?]
