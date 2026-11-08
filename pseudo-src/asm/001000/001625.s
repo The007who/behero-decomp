@@ -15,8 +15,7 @@ r4 = [bp+07]
 bp = [bp+05]
 
 loop:
-; parameters r1, r2, r3, r4
-call 001640
+call 001640 ; parameters r1, r2, r3, r4
 r3 = r3 + 0100
 r4 += 00, carry
 r1 = r1 + 0100

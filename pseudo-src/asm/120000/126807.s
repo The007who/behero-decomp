@@ -80,7 +80,7 @@ cmp r4, 00
 je 126855
 
 infinite:
-jmp 126854
+jmp infinite
 
 126855:
 ds = 00
