@@ -1,160 +1,171 @@
- 087713  push bp, bp to [sp]                                 DA88
- 087714  sp -= 01                                            2041
- 087715  bp = sp + 0001                                      0B08 0001
+push bp, bp to [sp]                                 DA88
+sp -= 01                                            2041
+bp = sp + 0001                                      0B08 0001
 
- 087717  r4 = 0080                                           990C 0080
- 087719  [bp+00] = r4                                        D800
- 08771A  r4 = [bp+00]                                        9800
- 08771B  cmp r4, 00                                          4840
- 08771C  jne 8771f                                           4E02
- 08771D  goto 08776d                                         FE88 776D
+r4 = 0080                                           990C 0080
+[bp+00] = r4                                        D800
 
- 08771F  sp -= 01                                            2041
- 087720  r3 = 01                                             9641
- 087721  r4 = sp + 0001                                      0908 0001
- 087723  [r4] = r3                                           D6C4
- 087724  call 08765a ; arbitrary wait
- 087726  sp += 01                                            0041
+08771A:
+r4 = [bp+00]
+cmp r4, 00                                          4840
+jne 8771f                                           4E02
+goto 08776d                                         FE88 776D
 
- 087727  r4 = [bp+04]                                        9804
- 087728  r4 &= [bp+00]                                       B800
- 087729  cmp r4, 00                                          4840
- 08772A  je 87737                                            5E0C
+08771F:
+sp -= 01
+r3 = 01                                             9641
+r4 = sp + 0001                                      0908 0001
+[r4] = r3                                           D6C4
+call 08765a ; arbitrary wait
+sp += 01                                            0041
+
+r4 = [bp+04]                                        9804
+r4 &= [bp+00]                                       B800
+cmp r4, 00                                          4840
+je 87737                                            5E0C
 
 ; enable bit 5 in IOD_Buffer
- 08772B  r3 = 7879
- 08772D  r4 = 00
- 08772E  ds = r4
- 08772F  r4 = ds:[r3]
- 087730  r4 |= 10
- 087731  r2 = 7879
- 087733  r3 = 00
- 087734  ds = r3
- 087735  ds:[r2] = r4
+r3 = 7879
+r4 = 00
+ds = r4
+r4 = ds:[r3]
+r4 |= 10
+r2 = 7879
+r3 = 00
+ds = r3
+ds:[r2] = r4
 
- 087736  jmp 87743                                           EE0C
+jmp 87743                                           EE0C
 
 ; zero out bit 5 in IOD_Buffer
- 087737  r3 = 7879                                           970B 7879
- 087739  r4 = 00                                             9840
- 08773A  ds = r4                                             F02C
- 08773B  r4 = ds:[r3]                                        98E3
- 08773C  r2 = r4 & ffef                                      B50C FFEF
- 08773E  r3 = 7879                                           970B 7879
- 087740  r4 = 00                                             9840
- 087741  ds = r4                                             F02C
- 087742  ds:[r3] = r2                                        D4E3
+087737:
+r3 = 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r2 = r4 & ffef                                      B50C FFEF
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+ds:[r3] = r2                                        D4E3
 
- 087743  sp -= 01                                            2041
- 087744  r3 = 01                                             9641
- 087745  r4 = sp + 0001                                      0908 0001
- 087747  [r4] = r3                                           D6C4
- 087748  call 08765a ; arbitrary wait
+087743:
+sp -= 01
+r3 = 01                                             9641
+r4 = sp + 0001                                      0908 0001
+[r4] = r3                                           D6C4
+call 08765a ; arbitrary wait
 
 ; enable bit 4 in IOD_Buffer
- 08774A  r3 = 7879                                           970B 7879
- 08774C  r4 = 00                                             9840
- 08774D  ds = r4                                             F02C
- 08774E  r4 = ds:[r3]                                        98E3
- 08774F  r4 |= 08                                            A848
- 087750  r2 = 7879                                           950A 7879
- 087752  r3 = 00                                             9640
- 087753  ds = r3                                             F02B
- 087754  ds:[r2] = r4                                        D8E2
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r4 |= 08                                            A848
+r2 = 7879                                           950A 7879
+r3 = 00                                             9640
+ds = r3                                             F02B
+ds:[r2] = r4                                        D8E2
 
- 087755  r3 = 01                                             9641
- 087756  r4 = sp + 0001                                      0908 0001
- 087758  [r4] = r3                                           D6C4
- 087759  call 08765a ; arbitrary wait
- 08775B  sp += 01                                            0041
+r3 = 01                                             9641
+r4 = sp + 0001                                      0908 0001
+[r4] = r3                                           D6C4
+call 08765a ; arbitrary wait
+sp += 01                                            0041
 
 ; zero out bit 4 in IOD_Buffer
- 08775C  r3 = 7879                                           970B 7879
- 08775E  r4 = 00                                             9840
- 08775F  ds = r4                                             F02C
- 087760  r4 = ds:[r3]                                        98E3
- 087761  r2 = r4 & fff7                                      B50C FFF7
- 087763  r3 = 7879                                           970B 7879
- 087765  r4 = 00                                             9840
- 087766  ds = r4                                             F02C
- 087767  ds:[r3] = r2                                        D4E3
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r2 = r4 & fff7                                      B50C FFF7
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+ds:[r3] = r2                                        D4E3
 
- 087768  r4 = [bp+00]                                        9800
- 087769  r4 = r4 lsr 1                                       9964
- 08776A  [bp+00] = r4                                        D800
- 08776B  goto 08771a                                         FE88 771A
+r4 = [bp+00]                                        9800
+r4 = r4 lsr 1                                       9964
+[bp+00] = r4                                        D800
+goto 08771a                                         FE88 771A
 
 ; zero out bit 5 in IOD_Dir
- 08776D  r3 = 787a                                           970B 787A
- 08776F  r4 = 00                                             9840
- 087770  ds = r4                                             F02C
- 087771  r4 = ds:[r3]                                        98E3
- 087772  r2 = r4 & ffef                                      B50C FFEF
- 087774  r3 = 787a                                           970B 787A
- 087776  r4 = 00                                             9840
- 087777  ds = r4                                             F02C
- 087778  ds:[r3] = r2                                        D4E3
+08776D:
+r3 = 787a
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r2 = r4 & ffef                                      B50C FFEF
+r3 = 787a                                           970B 787A
+r4 = 00                                             9840
+ds = r4                                             F02C
+ds:[r3] = r2                                        D4E3
 
- 087779  sp -= 01                                            2041
- 08777A  r3 = 01                                             9641
- 08777B  r4 = sp + 0001                                      0908 0001
- 08777D  [r4] = r3                                           D6C4
- 08777E  call 08765a ; arbitrary wait
- 087780  sp += 01                                            0041
+sp -= 01                                            2041
+r3 = 01                                             9641
+r4 = sp + 0001                                      0908 0001
+[r4] = r3                                           D6C4
+call 08765a ; arbitrary wait
+sp += 01                                            0041
 
 ; enable bit 4 in IOD_Buffer
- 087781  r3 = 7879                                           970B 7879
- 087783  r4 = 00                                             9840
- 087784  ds = r4                                             F02C
- 087785  r4 = ds:[r3]                                        98E3
- 087786  r4 |= 08                                            A848
- 087787  r2 = 7879                                           950A 7879
- 087789  r3 = 00                                             9640
- 08778A  ds = r3                                             F02B
- 08778B  ds:[r2] = r4                                        D8E2
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r4 |= 08                                            A848
+r2 = 7879                                           950A 7879
+r3 = 00                                             9640
+ds = r3                                             F02B
+ds:[r2] = r4                                        D8E2
 
- 08778C  r4 = 03e8                                           990C 03E8
- 08778E  [bp+00] = r4                                        D800
- 08778F  r4 = [bp+00]                                        9800
- 087790  r4 -= 01                                            2841
- 087791  [bp+00] = r4                                        D800
- 087792  r4 = [bp+00]                                        9800
- 087793  cmp r4, ffff                                        490C FFFF
- 087795  je 877a0                                            5E0A
+r4 = 03e8                                           990C 03E8
+[bp+00] = r4                                        D800
+
+08778F:
+r4 = [bp+00]                                        9800
+r4 -= 01                                            2841
+[bp+00] = r4                                        D800
+r4 = [bp+00]                                        9800
+cmp r4, ffff                                        490C FFFF
+je 877a0                                            5E0A
 
 ; check if bit 5 of IOD_Data is unset
- 087796  r3 = 7878                                           970B 7878
- 087798  r4 = 00                                             9840
- 087799  ds = r4                                             F02C
- 08779A  r4 = ds:[r3]                                        98E3
- 08779B  r4 &= 10                                            B850
- 08779C  cmp r4, 00                                          4840
- 08779D  jne 8779f                                           4E01
- 08779E  jmp 877a0 ; equal to 0, meaning bit 5 = 0
- 08779F  jmp 8778f ; not equal to 0, meaning bit 5 = 1
+r3 = 7878                                           970B 7878
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r4 &= 10                                            B850
+cmp r4, 00                                          4840
+jne 8779f                                           4E01
+jmp 877a0 ; equal to 0, meaning bit 5 = 0
+
+08779F:
+jmp 8778f ; not equal to 0, meaning bit 5 = 1
 
 ; zero out bit 4 in IOD_Buffer
- 0877A0  r3 = 7879                                           970B 7879
- 0877A2  r4 = 00                                             9840
- 0877A3  ds = r4                                             F02C
- 0877A4  r4 = ds:[r3]                                        98E3
- 0877A5  r2 = r4 & fff7                                      B50C FFF7
- 0877A7  r3 = 7879                                           970B 7879
- 0877A9  r4 = 00                                             9840
- 0877AA  ds = r4                                             F02C
- 0877AB  ds:[r3] = r2                                        D4E3
+0877A0:
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r2 = r4 & fff7                                      B50C FFF7
+r3 = 7879                                           970B 7879
+r4 = 00                                             9840
+ds = r4                                             F02C
+ds:[r3] = r2                                        D4E3
 
 ; enable bit 5 in IOD_Dir
- 0877AC  r3 = 787a                                           970B 787A
- 0877AE  r4 = 00                                             9840
- 0877AF  ds = r4                                             F02C
- 0877B0  r4 = ds:[r3]                                        98E3
- 0877B1  r4 |= 10                                            A850
- 0877B2  r2 = 787a                                           950A 787A
- 0877B4  r3 = 00                                             9640
- 0877B5  ds = r3                                             F02B
- 0877B6  ds:[r2] = r4                                        D8E2
+r3 = 787a                                           970B 787A
+r4 = 00                                             9840
+ds = r4                                             F02C
+r4 = ds:[r3]                                        98E3
+r4 |= 10                                            A850
+r2 = 787a                                           950A 787A
+r3 = 00                                             9640
+ds = r3                                             F02B
+ds:[r2] = r4                                        D8E2
 
- 0877B7  r1 = [bp+00]                                        9200
- 0877B8  sp += 01                                            0041
- 0877B9  pop bp, pc from [sp]                                9898
+r1 = [bp+00]                                        9200
+sp += 01                                            0041
+pop bp, pc from [sp]                                9898

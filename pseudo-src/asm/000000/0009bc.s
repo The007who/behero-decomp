@@ -1,11 +1,9 @@
-; 09bc
+push bp, bp to [sp]
+sp -= $12
+bp = sp + 0001
 
-push bp, bp to [sp] ; DA88
-sp -= $12            ; 2052
-bp = sp + 0001      ; 0B08 0001
-
-r4 = $0d            ; 984D
-[bp+00] = r4		; D800
+r4 = $0d
+[bp+00] = r4
 r4 = $1fff
 [bp+01] = r4
 r4 = 01
